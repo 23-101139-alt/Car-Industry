@@ -19,14 +19,20 @@ document.getElementById("list4bg").innerHTML = "Contact Us";
 
 // sec1
 document.getElementById("header-sec1").innerHTML = "Automotive";
+document.getElementById("title1-sec1").innerHTML = "2024 BYD Seal U DM-i";
+document.getElementById("2-sec1").innerHTML = "02";
+document.getElementById("s-title-sec1").innerHTML = "Electric Motors";
+document.getElementById("5-sec1").innerHTML = "05";
+document.getElementById("s-title2-sec1").innerHTML = "Driving Modes";
 
+document.getElementById("left-text1-sec1").innerHTML = "Engine";
+document.getElementById("left-text2-sec1").innerHTML = "5.5 L";
+document.getElementById("left-text3-sec1").innerHTML = " Power";
+document.getElementById("left-text4-sec1").innerHTML = " 218 kw";
+document.getElementById("left-text5-sec1").innerHTML = " Range";
+document.getElementById("left-text6-sec1").innerHTML = " 200 km";
 
-
-
-
-
-
-
+document.getElementById("cta-sec1").innerHTML = "View product ";
 
 
 
