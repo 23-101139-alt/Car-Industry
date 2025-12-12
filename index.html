@@ -9,6 +9,8 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
 </head>
 <body>
 <header class="headerr">
@@ -64,6 +66,57 @@
     </header>
 
     <main class="mainn">
+        <section class="sec1">
+            <div class="main-info-sec1">
+                <div class="container-all-info-sec1">
+                <h1 class="header-sec1" id="header-sec1"></h1>
+                <div class="big-cont-sec1">
+                    <div class="right-box-sec1">
+                        <div class="container-model-one-sec1">
+
+                            <model-viewer src="models/2024_byd_seal_u_dm-i.glb"
+                                ar ar-modes="webxr scene-viewer quick-look"
+                                camera-controls
+                                tone-mapping="neutral"
+                                poster="models/poster1.png"
+                                shadow-intensity="1"
+                            camera-orbit="-36deg 75deg 0.1m"
+                            max-camera-orbit="Infinity Infinity Infinity"
+                                field-of-view="18deg"
+                                enable-pan
+                                                            disable-zoom
+                            disable-tap
+                                position="-0.5m 0m 0m"
+                                class="model-one">
+                                <div class="progress-bar hide" slot="progress-bar">
+                                    <div class="update-bar"></div>
+                                </div>
+
+                            </model-viewer>
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                    
+
+
+
+
+                </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+
 
     </main>
 

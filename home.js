@@ -15,9 +15,12 @@ document.getElementById("list4bg").innerHTML = "Contact Us";
     document.querySelector('.dropdown-burger-menu').classList.toggle('show');
   });
 
-
-
 // header
+
+// sec1
+document.getElementById("header-sec1").innerHTML = "Automotive";
+
+
 
 
 
