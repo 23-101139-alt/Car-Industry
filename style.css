@@ -228,6 +228,9 @@ height: 100%;
     width: 171%;
     height: 100%;
      transform: translateX(-24%);
+         width: clamp(120%, 171%, 200vw); 
+    height: 100%;
+   
 }
 
 /* .model-one::part( default-progress-bar ){
@@ -297,7 +300,7 @@ background: var(--white2);}
 .left-box-sec1{align-self: flex-end;
 display: flex;
 flex-direction: column;
-gap: 95px;padding-bottom: 72px;
+gap: 95px;padding-bottom: 72px;position: relative;
 }
 
 
@@ -328,7 +331,7 @@ height: 54px;
 justify-content: center;
 align-items: center;
 gap: 10px;
-padding: 0 28px;
+padding: 18px 28px;width: 300px;
 border-radius: 16px;
 background: var(--cta);
 transition: all 300ms linear;}
@@ -436,6 +439,72 @@ line-height: normal;}
      padding: 0 7.3%;}
 
 
+.main-info-sec1 { padding: 0 7.3%;}
+.container-all-info-sec1 {
+    max-width: 100%;
+    width: 100%;}
+
+.header-sec1 {
+    font-size: clamp(40px, 9vw, 80px);
+}
+ 
+    .model-one {
+                      width: clamp(140%, 290vw, 340%);
+        
+    }
+
+
+      .model-one {
+                   scale: 0.5;
+         transform: translateX(-60%);
+    
+    
+  }
+    
+.sec1 {
+            background-image: url(pic/pic7.png);
+       
+        background-position: center -100px;
+        background-size: auto;
+        background-repeat: no-repeat;
+}
+
+
+.big-cont-sec1 {
+    padding-top: 100px;}
+
+
+.cont-left-sec1 {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;}
+
+
+.left-box-sec1 {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 95px;z-index: 11;
+    padding-bottom: 66px;}
+
+.text-box-sec1 {
+    display: flex;
+    width: 353px;
+    position: absolute;
+    bottom: 148px;}
+
+
+.cta-sec1 {
+    display: inline-flex;
+    height: 54px;
+    justify-content: center;
+    position: absolute;left: 0;
+    bottom: 66px;
+}
+
+.left-box-sec1{position: static;}
+
+
 
 
 }
@@ -457,5 +526,23 @@ line-height: normal;}
 .navbar2 {
         gap: 4.3%;;}
 
+.sec1 {background-image: url(pic/pic6.png);}
+
+.container-all-info-sec1 {
+    max-width: 100%;
+    width: 100%;}
+.header-sec1 {
+    font-size: clamp(85px, 9vw, 117px);
+}
+    .model-one {
+        width: clamp(140%, 150vw, 200%);
+        
+    }
+
+
+      .model-one {
+     scale: 0.9 0.9 0.9;
+     transform: translateX(-32%);
+  }
 
 }
