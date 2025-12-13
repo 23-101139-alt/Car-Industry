@@ -668,6 +668,53 @@ aspect-ratio: 754.11/526.37;
  
 }
 
+.HotspotPara-1{display: block; 
+    position: absolute;
+    padding: 20px;
+    font-size: 14px;
+    color: white;
+    text-align: center;  top:68px ;   
+    background:var(--gradient-2);
+    color: var(--white);width: 189px;
+        font-family: Inter; height: fit-content;
+    border-radius: 25px;font-weight: 600;
+    font-size: 28px;}
+
+
+.para1-hot-spots{color: var(--white);
+text-align: center;
+font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+    display: -webkit-box;
+    display: box;
+    display: flexbox;
+    line-clamp: 5;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -682,7 +729,8 @@ aspect-ratio: 754.11/526.37;
     display: flex;
     align-items: center;
     justify-content: center;
-    right: 21px;
+    right: 69px;
+    bottom: -48px;
 }
 
 .HotspotAnnotation-2 {
@@ -704,10 +752,76 @@ aspect-ratio: 754.11/526.37;
 
 
 
+.HotspotPara-2{display: block; 
+    margin-top: 5px;
+    font-size: 14px;position: absolute;
+    color: white;
+    text-align: center;  top:68px ; 
+    background:var(--gradient-2);
+    color: var(--white);
+        font-family: Inter; width: 226px;height: fit-content;
+    border-radius: 25px;font-weight: 600;
+    font-size: 28px;}
+
+.HotspotPara-2{display: block; 
+    position: absolute;
+    padding: 20px;
+    font-size: 14px;
+    color: white;
+    text-align: center;  top:68px ;   
+    background:var(--gradient-2);
+    color: var(--white);width: 226px;
+        font-family: Inter; height: fit-content;
+    border-radius: 25px;font-weight: 600;
+    font-size: 28px;}
+
+
+.para2-hot-spots{color: var(--white);
+text-align: center;
+font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+    display: -webkit-box;
+    display: box;
+    display: flexbox;
+    line-clamp: 5;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .Hotspot-3 {
     position: absolute;
-    width: 27px;           
+    width: 27px;        
     height: 27px;
     background: var(--gradient-2); 
     border-radius: 50%;   
@@ -716,13 +830,13 @@ aspect-ratio: 754.11/526.37;
     display: flex;
     align-items: center;
     justify-content: center;
-    right: -65px;
+    right: -134px;
 }
 
 .HotspotAnnotation-3 {
     position: absolute;
     bottom: 30px;        
-    left: 74%;
+    left: 183%;
     background:var(--gradient-2);
     color: var(--white);right: -61px;
     font-family: Inter;
@@ -730,14 +844,44 @@ aspect-ratio: 754.11/526.37;
     font-size: 28px;height: 60px;
     display: flex;
     justify-content: center;align-items: center;
-    white-space: nowrap;
+   
     pointer-events: none;width: 189px;
  
 }
+.names-hts{    color: var(--white);
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 28px;}
 
 
 
 
+.HotspotPara-3{display: block; 
+    position: absolute;
+    padding: 20px;
+    font-size: 14px;
+    color: white;
+    text-align: center;  top:68px ;   
+    background:var(--gradient-2);
+    color: var(--white);width: 189px;
+        font-family: Inter; height: fit-content;
+    border-radius: 25px;font-weight: 600;
+    font-size: 28px;}
+
+
+.para-hot-spots{color: var(--white);
+text-align: center;
+font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+    display: -webkit-box;
+    display: box;
+    display: flexbox;
+    line-clamp: 5;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis}
 
 
 

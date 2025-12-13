@@ -195,6 +195,67 @@ document.getElementById("hs1-sec3").innerHTML = "Air Intake";
 document.getElementById("hs2-sec3").innerHTML = "Electric mirror";
 document.getElementById("hs3-sec3").innerHTML = "Aero Vents";
 
+document.getElementById("parahs3-sec3").innerHTML = "The Emira’s aero vents direct airflow to boost cooling and enhance stability.";
+
+
+
+document.getElementById("parahs2-sec3").innerHTML = "The Lotus Emira V6 features electric adjustable mirrors for quick, visibility control.";
+document.getElementById("parahs1-sec3").innerHTML = "The Emira’s air intake feeds the engine with cooler, denser air for better performance and efficiency."
+
+
+
+const hotspot1 = document.querySelector('.Hotspot-1');
+const hotspot2 = document.querySelector('.Hotspot-2');
+const hotspot3 = document.querySelector('.Hotspot-3');
+const para1 = document.querySelector('.HotspotPara-1');
+const para2 = document.querySelector('.HotspotPara-2');
+const para3 = document.querySelector('.HotspotPara-3');
+
+
+para1.style.display = 'none';
+para2.style.display = 'none';
+para3.style.display = 'none';
+
+function togglePara(para) {
+    if (para.style.display === 'none' || para.style.display === '') {
+        para.style.display = 'block';
+    } else {
+        para.style.display = 'none';
+    }
+}
+
+hotspot1.addEventListener('click', () => togglePara(para1));
+hotspot2.addEventListener('click', () => togglePara(para2));
+hotspot3.addEventListener('click', () => togglePara(para3));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
