@@ -37,12 +37,65 @@ document.getElementById("cta-sec1").innerHTML = "View product ";
 
 
 
+// animationsec1
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".container-model-one-sec1", {
+  x: -200,       
+  opacity: 0,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".sec1",
+
+    toggleActions: "restart none restart none",
+      invalidateOnRefresh: true
+  }
+});
 
 
 
+gsap.from(".text-box-sec1", {
+  opacity: 0,
+       duration: 1,
+       delay: 0.5, 
+  scrollTrigger: {
+    trigger: ".sec1",
+    start: "top 80%",
+    toggleActions: "restart none restart none",
+      invalidateOnRefresh: true
+  }
+});
 
 
+gsap.from(".cta-sec1", {
+  opacity: 0,
+     duration: 1,
+       delay: 0.5, 
+    clearProps: "opacity",
+  scrollTrigger: {
+    trigger: ".sec1", 
+    start: "top 80%",
+    toggleActions: "restart none restart none",
+      invalidateOnRefresh: true
+  }
+});
 
+
+gsap.from(".cont-left-sec1", {
+  opacity: 0,
+     duration: 1,
+       delay: 0.5, 
+
+
+  scrollTrigger: {
+    trigger: ".sec1",
+    start: "top 80%",
+    toggleActions: "restart none restart none",
+      invalidateOnRefresh: true
+  }
+});
+
+// endanimationsec1
 
 
 

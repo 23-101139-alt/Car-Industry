@@ -333,8 +333,7 @@ align-items: center;
 gap: 10px;
 padding: 18px 28px;width: 300px;
 border-radius: 16px;
-background: var(--cta);
-transition: all 300ms linear;}
+background: var(--cta);}
 
 .cta-sec1:hover{background-color: var(--ctahover);}
 
@@ -614,7 +613,7 @@ font-size: 16px;}
 
 .cta-sec1 {
     display: inline-flex;
-    height: 54px;
+    height: 54px;width: 353px;
     justify-content: center;
     position: absolute;left: 0;
     bottom: 66px;
