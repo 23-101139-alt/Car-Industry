@@ -267,8 +267,9 @@ const modelTL = gsap.timeline({
 
 modelTL.to(".model-sec3", {
   scale: 1,
-  duration: 1.2,
-  ease: "power3.out"
+  duration: 1.4,
+  ease: "power3.out",
+    delay: 0.5
 });
 
 
@@ -298,6 +299,28 @@ ScrollTrigger.create({
 
 // endanimation sec3
 
+
+// animation sec4
+
+gsap.registerPlugin(ScrollTrigger);
+
+const marquee = document.querySelector(".marquee");
+const row = marquee.querySelector(".container-imgs-sec4");
+const rowWidth = row.scrollWidth;
+
+gsap.to(".marquee", {
+  x: `-${rowWidth / 2}px`,   
+  duration: 11,              
+  ease: "none",
+  repeat: -1,
+  modifiers: {
+    x: x => {
+      return `${parseFloat(x) % (rowWidth / 2)}px`;
+    }
+  }
+});
+
+// endanimation sec4
 
 
 
