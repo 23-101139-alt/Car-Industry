@@ -240,11 +240,32 @@ height: 100%;
 
 .model-one {
     width: 171%;
-    height: 100%;
+    height: 100%;position: relative;
      transform: translateX(-24%);
          width: clamp(120%, 171%, 200vw); 
     height: 100%;
    
+}
+
+.custom-ar-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  background-image: url(pic/ar_icon.png);
+  background-position: center;
+background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.model-one .custom-ar-btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
 }
 
 /* .model-one::part( default-progress-bar ){
@@ -461,8 +482,32 @@ box-shadow: -2px 4px 30.4px 0 #C6DE41;
 }
 
 .models-sec2{width: 100%;
- height: 591px;  
+ height: 591px;  position: relative;
 }
+
+.custom-ar-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  background-image: url(pic/ar_icon.png);
+  background-position: center;
+background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.models-sec2 .custom-ar-btn {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+
+
 
 .models-sec2::part( default-progress-bar ){
     display: none;
@@ -743,6 +788,9 @@ font-size: 16px;}
 .cta-sec2 {        width: 60px;
         height: 60px;}
 
+
+
+        
 }
 
 

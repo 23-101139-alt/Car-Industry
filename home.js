@@ -148,6 +148,9 @@ for (let i = 0; i < cardssec2.length; i++) {
                                 camera-target="0 0 0"
                                 disable-zoom
                                 disable-tap>
+    <button slot="ar-button"class="custom-ar-btn" >
+        
+    </button>
                             </model-viewer>
                                 <button class="cta-sec2">
                                     <a href="#" class="link-sec2">
