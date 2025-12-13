@@ -187,13 +187,13 @@ gsap.utils.toArray(".main-card-sec2").forEach(card => {
 // endanimationsec2
 
 
+// sec3
+document.getElementById("header-sec3").innerHTML = "Car Explorer";
+document.getElementById("para-sec3").innerHTML = "The Lotus Emira V6 features precision-engineered elements that enhance both performance and aerodynamics. Its sculpted side air intakes feed cool air directly to the supercharged V6 engine, improving efficiency and power delivery. Subtle aero vents along the body help channel airflow smoothly around the car, reducing drag and increasing stability at high speeds. The sleek, lightweight mirrors are shaped to minimize wind resistance while maintaining clear visibility, completing the Emira’s balance of functional design and striking sports-car aesthetics.";
 
-
-
-
-
-
-
+document.getElementById("hs1-sec3").innerHTML = "Air Intake";
+document.getElementById("hs2-sec3").innerHTML = "Electric mirror";
+document.getElementById("hs3-sec3").innerHTML = "Aero Vents";
 
 
 
