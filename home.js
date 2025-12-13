@@ -238,6 +238,68 @@ document.getElementById("cta-sec3").innerHTML = "View More Details ";
 
 
 
+// animation sec3
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+gsap.set(".model-sec3", {
+  scale: 0.4,
+  transformOrigin: "center center"
+});
+
+
+gsap.set(
+  [".Hotspot-1", ".Hotspot-2", ".Hotspot-3"],
+  { opacity: 0, pointerEvents: "none" }
+);
+
+const modelTL = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".sec3",
+    start: "top 75%",
+    toggleActions: "restart none restart none",
+    invalidateOnRefresh: true
+  }
+});
+
+
+modelTL.to(".model-sec3", {
+  scale: 1,
+  duration: 1.2,
+  ease: "power3.out"
+});
+
+
+modelTL.to(
+  [".Hotspot-1", ".Hotspot-2", ".Hotspot-3"],
+  {
+    opacity: 1,
+    duration: 0.6,
+    stagger: 0.15,
+    pointerEvents: "auto"
+  },
+  "-=0.3" 
+);
+ScrollTrigger.create({
+  trigger: ".sec3",
+  start: "top 75%",
+  onLeaveBack: () => {
+    gsap.set(".model-sec3", { scale: 0.7 });
+    gsap.set(
+      [".Hotspot-1", ".Hotspot-2", ".Hotspot-3"],
+      { opacity: 0, pointerEvents: "none" }
+    );
+  }
+});
+
+
+
+// endanimation sec3
+
+
+
 
 
 
