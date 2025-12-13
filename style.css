@@ -738,7 +738,7 @@ font-weight: 400;
 
 .HotspotAnnotation-2 {
     position: absolute;
-    bottom: 44px;         
+     bottom: 70px;        
     left: -538%;
     transform: translateX(-50%);
     background:var(--gradient-2);
@@ -787,8 +787,8 @@ font-weight: 400;
     display: -webkit-box;
     display: box;
     display: flexbox;
-    line-clamp: 5;
-    -webkit-line-clamp: 5;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis}
@@ -1159,8 +1159,155 @@ font-size: 16px;}
 
 
 
-        
+.container-model-sec3 {
+    width: 100%;}
+
+.container-sec3 {
+    width: 100%;
+    height: 100%;
+    padding: 100px 20px;}
+
+
+.container2-sec3 {
+    max-width: 100%;
+    width: 100%;}
+
+
+.HotspotAnnotation-2 {
+    position: absolute;
+    bottom: 70px;}
+
+
+.HotspotAnnotation-2 {
+    position: absolute;
+    bottom: 70px;
+
 }
+
+
+.para2-hot-spots {
+    color: var(--white);
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    display: -webkit-box;
+    display: box;
+    display: flexbox;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;}
+
+
+.para1-hot-spots{    line-clamp: 3;
+    -webkit-line-clamp: 3;}
+
+.para-hot-spots{    line-clamp: 3;
+    -webkit-line-clamp: 3;}
+
+
+.names-hts{font-size: 18px;}
+
+.HotspotAnnotation-2{width: 141px;height: 43px;left: -204%;}
+
+.HotspotAnnotation-3{width: 114px;height: 43px;left: 138%;bottom: 51px;}
+
+
+.HotspotAnnotation-1 {width: 113px;height: 43px;left: 310%;}
+
+
+.Hotspot-1{width: 37px;height: 37px;left: -98px;
+        bottom: -3px;}
+.Hotspot-2{width: 37px;height: 37px;
+right: 17px;
+    bottom: -31px;}
+.Hotspot-3{width: 37px;height: 37px;right: -67px;}
+.para1-hot-spots{font-size: 16px;}
+.para2-hot-spots{font-size: 16px;}
+.para3-hot-spots{font-size: 16px;}
+
+
+
+.HotspotPara-1{padding: 14px;width: 113px; top: 54px;}
+.HotspotPara-2{padding: 14px;top: 54px;width: 141px;}
+.HotspotPara-3{padding: 14px;top:54px;width: 113px;}
+
+.model-sec3 {
+    width: 100%;
+    position: relative;
+    height:110%;
+}
+.header-sec3 {
+    color: var(--white);
+    text-align: center;
+    font-family: Syncopate;
+    font-size: 34px;}
+
+
+
+
+.para-sec3 {
+    color: var(--white);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;}
+
+.text-cont-sec3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 38px;
+    width: 100%;
+}
+
+
+.cta-sec3 {
+    display: inline-flex;
+    height: 52px;}
+
+.cta-text3 {
+    color: var(--darkblue);
+    font-family: Syncopate;
+    font-size: 16px;
+}
+.sec3 {
+    width: 100%;
+    height: fit-content;
+    background-image: url(pic/pic14.png);}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1283,10 +1430,81 @@ font-size: 16px;}
     display: flex;
     height: fit-content;}
 
+
+.container-model-sec3 {
+    width: 100%;}
+
+.container-sec3 {
+    width: 100%;
+    height: 100%;
+    padding: 125px 7.3%;}
+
+
+.container2-sec3 {
+    max-width: 100%;
+    width: 100%;}
+
+
+.HotspotAnnotation-2 {
+    position: absolute;
+    bottom: 70px;}
+
+
+.HotspotAnnotation-2 {
+    position: absolute;
+    bottom: 70px;
+
 }
 
 
+.para2-hot-spots {
+    color: var(--white);
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    display: -webkit-box;
+    display: box;
+    display: flexbox;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;}
 
+
+.para1-hot-spots{    line-clamp: 2;
+    -webkit-line-clamp: 2;}
+
+.para-hot-spots{    line-clamp: 2;
+    -webkit-line-clamp: 2;}
+
+.container-model-sec3{min-width: 562px;}
+
+
+.sec3 {
+    width: 100%;
+    height: fit-content;
+    background-image: url(pic/pic15.png);}
+
+
+
+
+.HotspotAnnotation-2{height: 60px;}
+
+.HotspotAnnotation-3{height: 60px;}
+
+
+.HotspotAnnotation-1 {height: 60px;}
+
+
+
+
+
+
+
+
+}
 
 
 
@@ -1350,9 +1568,12 @@ font-weight: 500;
     max-width: 100%;
     width: 100%;}
 
+.container-model-sec3 {
+    width: 82%;}
 
-
-
+.container2-sec3 {
+    max-width: 100%;
+    width: 100%;}
 
 
 }
