@@ -167,6 +167,22 @@ for (let i = 0; i < cardssec2.length; i++) {
 
 
 
+// animationsec2
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".main-card-sec2").forEach(card => {
+  ScrollTrigger.create({
+    trigger: card,
+    start: "top 85%",
+    toggleActions: "restart none restart none", 
+    onEnter: () => gsap.to(card, { opacity: 1, y: 0, duration: 1, ease: "power2.out" }),
+    onLeaveBack: () => gsap.set(card, { opacity: 0, y: 200 }) 
+  });
+});
+
+
+// endanimationsec2
+
 
 
 
