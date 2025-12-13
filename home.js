@@ -224,9 +224,15 @@ function togglePara(para) {
     }
 }
 
+
 hotspot1.addEventListener('click', () => togglePara(para1));
 hotspot2.addEventListener('click', () => togglePara(para2));
 hotspot3.addEventListener('click', () => togglePara(para3));
+
+
+
+
+document.getElementById("cta-sec3").innerHTML = "View More Details ";
 
 
 

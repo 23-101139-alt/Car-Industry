@@ -574,7 +574,10 @@ font-weight: 500;}
 
 
 .sec3{width: 100%;
-height: 960.91px;}
+height: fit-content;
+    background-image: url(pic/pic13.png);
+    background-repeat: no-repeat;
+    background-position: center 90%;}
 
 
 .container-sec3 {
@@ -806,19 +809,6 @@ font-weight: 400;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .Hotspot-3 {
     position: absolute;
     width: 27px;        
@@ -882,6 +872,86 @@ font-weight: 400;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis}
+
+
+
+
+
+
+
+.cta-sec3{display: inline-flex;
+height: 54px;
+justify-content: center;margin-top: 129px;
+align-items: center;
+gap: 10px;
+padding: 18px 28px;width: 313px;
+border-radius: 16px;
+background: var(--cta);
+transition: all 300ms linear;}
+
+.cta-sec3:hover{background-color: var(--ctahover);}
+
+
+
+
+.link3-cta{text-decoration: none;
+display: inline-flex;
+height: 100%;width: 100%;
+justify-content: center;
+align-items: center;
+gap: 10px;}
+
+.cta-text3{color: var(--darkblue);
+font-family: Syncopate;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
