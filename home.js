@@ -324,21 +324,30 @@ gsap.to(".marquee", {
 
 
 
+// sec5
+document.getElementById("header-sec5").innerHTML = "we chose us?";
 
+document.getElementById("title1-sec5").innerHTML = "Innovative Technology";
 
+document.getElementById("para-sec5").innerHTML =`The Lotus Emira V6 features precision-engineered elements that enhance both performance and aerodynamics. Its sculpted side air intakes feed cool air directly to the supercharged V6 engine, improving efficiency and power delivery. Subtle aero vents along the body help channel airflow smoothly around the car, reducing drag and increasing stability at high speeds. The sleek, lightweight mirrors are shaped to minimize wind resistance while maintaining clear visibility, completing the Emira’s balance of functional design and striking sports-car aesthetics.`
 
+document.getElementById("link-sec5").innerHTML =`Read More`
 
+document.getElementById("title2-sec5").innerHTML =`Local Expertise`
 
+document.getElementById("para2-sec5").innerHTML =`We understand the needs of Egyptian users while meeting international quality standards. Whether you're exploring cars, comparing models, or learning about new tech, you get reliable information built for Egypt — and beyond.`
 
+document.getElementById("link2-sec5").innerHTML =`Read More`
 
+document.getElementById("title3-sec5").innerHTML =`User-Focused `
 
+document.getElementById("para3-sec5").innerHTML =`Everything is designed for simplicity and comfort. From easy navigation to smooth controls, we make sure every user — beginners or enthusiasts — can explore features effortlessly.`
+document.getElementById("link3-sec5").innerHTML =`Read More`
 
+document.getElementById("title4-sec5").innerHTML =`Trusted Automotive `
 
-
-
-
-
-
+document.getElementById("para4-sec5").innerHTML =`Our content is built by people who understand cars. You can rely on accurate information, clear explanations, and insights that help you make confident decisions.`
+document.getElementById("link4-sec5").innerHTML =`Read More`
 
 
 
