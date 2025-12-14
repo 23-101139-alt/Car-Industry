@@ -397,8 +397,44 @@ document.getElementById("title3-sec6").innerHTML =`Nissan_gt-r `
 document.getElementById("para3-sec6").innerHTML =`Known for its legendary power and precision, this high-performance machine delivers explosive acceleration and sharp handling that thrill every driver. Advanced engineering and intelligent all-wheel drive make it one of the most iconic sports cars on the road.`
 
 
+// animationsec6
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".first-box-sec6").forEach(card => {
+  ScrollTrigger.create({
+    trigger: card,
+    start: "top 85%",
+    toggleActions: "restart none restart none",
+
+    onEnter: () =>
+      gsap.fromTo(
+        card,
+        { opacity: 0, x: -200 },  
+        { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+      ),
+    onLeaveBack: () =>
+      gsap.set(card, { opacity: 0, x: -200 })
+  });
+});
 
 
+
+gsap.utils.toArray(".sec-box-sec6").forEach(card => {
+  ScrollTrigger.create({
+    trigger: card,
+    start: "top 85%",
+    toggleActions: "restart none restart none",
+
+    onEnter: () =>
+      gsap.fromTo(
+        card,
+        { opacity: 0, x: 200 },
+        { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+      ),
+    onLeaveBack: () =>
+      gsap.set(card, { opacity: 0, x: 200 })
+  });
+});
 
 
 

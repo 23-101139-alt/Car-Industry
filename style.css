@@ -1192,13 +1192,13 @@ line-height: 140%; /* 56px */}
 
 .first-box-sec6{width: 100%;
 aspect-ratio: 33 / 9;
-position: relative;
+position: relative;z-index: 11;
 display: flex;align-self: end;
     align-items: flex-end;}
 
 
 .sec-box-sec6{width: 100%;
-aspect-ratio: 32 / 10;
+aspect-ratio: 32 / 10;z-index: 11;
 position: relative;justify-content: end;
 display: flex;align-self: end;
     align-items: flex-end;}
