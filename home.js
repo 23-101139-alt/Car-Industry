@@ -409,11 +409,16 @@ gsap.utils.toArray(".first-box-sec6").forEach(card => {
     onEnter: () =>
       gsap.fromTo(
         card,
-        { opacity: 0, x: -200 },  
+        { opacity: 0, x: -200 },
         { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
       ),
-    onLeaveBack: () =>
-      gsap.set(card, { opacity: 0, x: -200 })
+
+    onEnterBack: () =>
+      gsap.fromTo(
+        card,
+        { opacity: 0, x: -200 },
+        { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+      )
   });
 });
 
@@ -431,10 +436,16 @@ gsap.utils.toArray(".sec-box-sec6").forEach(card => {
         { opacity: 0, x: 200 },
         { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
       ),
-    onLeaveBack: () =>
-      gsap.set(card, { opacity: 0, x: 200 })
+
+    onEnterBack: () =>
+      gsap.fromTo(
+        card,
+        { opacity: 0, x: 200 },
+        { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+      )
   });
 });
+
 
 
 // sec7
@@ -450,6 +461,46 @@ document.getElementById("para4-sec7").innerHTML =`The handling impressed me the 
 document.getElementById("name3-sec7").innerHTML =`Mariam Samy`
 document.getElementById("para5-sec7").innerHTML =`"What impressed me most is how comfortable and reliable it is for everyday use. Whether I’m stuck in traffic or cruising on the highway, the ride stays stable and quiet. It’s the perfect balance between power and practicality."`
 
+
+
+// animationsec7
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".box1-sec7").forEach(card => {
+  ScrollTrigger.create({
+    trigger: card,
+    start: "top 85%",
+    toggleActions: "restart none restart none", 
+    onEnter: () => gsap.to(card, { opacity: 1, y: 0, duration: 1, ease: "power2.out" }),
+    onLeaveBack: () => gsap.set(card, { opacity: 0, y: 200 }) 
+  });
+});
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".box2-sec7").forEach(card => {
+  ScrollTrigger.create({
+    trigger: card,
+    start: "top 85%",
+    toggleActions: "restart none restart none", 
+    onEnter: () => gsap.to(card, { opacity: 1, y: 0, duration: 1, ease: "power2.out" }),
+    onLeaveBack: () => gsap.set(card, { opacity: 0, y: 200 }) 
+  });
+});
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".box3-sec7").forEach(card => {
+  ScrollTrigger.create({
+    trigger: card,
+    start: "top 85%",
+    toggleActions: "restart none restart none", 
+    onEnter: () => gsap.to(card, { opacity: 1, y: 0, duration: 1, ease: "power2.out" }),
+    onLeaveBack: () => gsap.set(card, { opacity: 0, y: 200 }) 
+  });
+});
 
 
 
