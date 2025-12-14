@@ -1154,7 +1154,7 @@ text-underline-position: from-font;}
 height: fit-content;
 background-image: url(pic/pic28.png);
     background-size: cover;
-    background-position: top;
+    background-position: top;border-radius: 246px;
     background-repeat: no-repeat;}
 
 
@@ -1320,6 +1320,158 @@ align-items: center;
 }
 
 
+.sec7{width: 100%;
+height: fit-content;}
+
+
+.container-sec7 {
+    width: 100%;
+    height: 100%;
+    padding: 125px 7.9% ;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container2-sec7 {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+
+.header-sec7{color: var(--white);
+font-family: Syncopate;
+font-size: 40px;
+font-weight: 700;}
+
+
+.row-sec7{
+    display: flex;
+    flex-wrap: wrap;       
+    gap: 20px;
+    justify-content: flex-start;
+  align-items: stretch;  
+}
+
+
+.box1-sec7{
+    flex: 1 1 315px;      
+  
+  height: fit-content;
+
+    background: var(--gradient-2);
+    border-radius: 25px;
+    border: 2px solid var(--border-color);
+    padding: 34px 24px;
+    display: flex;
+    flex-direction: column;transition: 300ms all linear;
+    gap: 22px;
+}
+
+
+.sub-row-sec7{display: flex;
+align-items: center;flex-direction: row;
+gap: 19px;}
+
+.name-sec7{color: var(--white);
+font-family: Syncopate;
+font-size: 20px;
+font-weight: 700;
+line-height: 140%; /* 28px */}
+
+
+.para-sec7{
+color: var(--white);
+font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 140%; 
+   display: -webkit-box;
+    display: box;
+    display: flexbox;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis}
+
+
+
+.box2-sec7{
+    flex: 1 1 315px;      
+ 
+height: fit-content;
+      background: var(--gradient3);
+    border-radius: 25px;
+    border: 2px solid var(--border-color);
+    padding: 34px 24px;
+    display: flex;
+    flex-direction: column;transition: 300ms all linear;
+    gap: 22px;
+}
+
+
+
+.name2-sec7{color: var(--darkblue);
+font-family: Syncopate;
+font-size: 20px;
+font-weight: 700;
+line-height: 140%; /* 28px */}
+
+
+.sub-cont-para-sec7{display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+
+.para2-sec7{
+color: var(--darkblue);
+font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 150%; 
+   display: -webkit-box;
+    display: box;
+    display: flexbox;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis}
+
+
+.box3-sec7{
+      flex: 1 1 315px;      
+ 
+height: fit-content;
+    background: var(--gradient-2);
+    border-radius: 25px;
+    border: 2px solid var(--border-color);
+    padding: 34px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+        justify-content: flex-end;
+        margin-top: auto;transition: 300ms all linear;
+}
+
+.box3-sec7:hover {
+    box-shadow: -2px 4px 30.4px 0 #C6DE41;
+}
+
+
+.box2-sec7:hover {
+    box-shadow: -2px 4px 30.4px 0 #C6DE41;
+}
+
+.box1-sec7:hover {
+    box-shadow: -2px 4px 30.4px 0 #C6DE41;
+}
 
 
 
@@ -1327,14 +1479,14 @@ align-items: center;
 
 
 
-
-
-
-
-
-
-
-
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;            
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 100%;           
+      align-items: stretch;
+}
 
 
 
@@ -1802,6 +1954,52 @@ gap: 30px;
 
 
 
+
+
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+   
+    flex-direction: column;}
+
+.container2-sec7 {
+    max-width: 100%;gap: 70px;
+    width: 100%;}
+
+.box3-sec7 {
+    flex: 100;}
+.box2-sec7 {
+    flex: 100;}
+.box1-sec7 {
+    flex: 100;}
+
+.container-sec7 {
+    padding: 100px 20px;}
+
+.header-sec7{font-size: 34px;}
+
+
+.para-sec7{font-size: 16px;}
+.para2-sec7{font-size: 16px;}
+
+
+
+.sec6 {
+
+    border-radius: 96px;
+}
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -2079,6 +2277,40 @@ gap: 38px;
 
 
 
+.sec6 {
+
+    border-radius: 181px;
+}
+
+
+
+
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+   
+    flex-direction: column;}
+
+.container2-sec7 {
+    max-width: 100%;gap: 72px;
+    width: 100%;}
+
+.box3-sec7 {
+    flex: 100;}
+.box2-sec7 {
+    flex: 100;}
+.box1-sec7 {
+    flex: 100;}
+
+.container-sec7 {
+    padding: 125px 7.3%;}
+
+
+
+
+
+
 }
 
 
@@ -2168,13 +2400,6 @@ font-weight: 500;
 
 .container2-sec6 {
     max-width: 100%;}
-
-
-
-
-
-
-
 
 
 

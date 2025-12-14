@@ -437,6 +437,22 @@ gsap.utils.toArray(".sec-box-sec6").forEach(card => {
 });
 
 
+// sec7
+document.getElementById("haeder-sec7").innerHTML =`Testimonials`
+document.getElementById("name1-sec7").innerHTML =`Sally Amir`
+document.getElementById("para1-sec7").innerHTML =`"The technology in this car is on another level. From the safety features to the smart interior controls, everything feels modern and intuitive. It gives me confidence on the road and makes every journey feel premium."`
+
+document.getElementById("name2-sec7").innerHTML =`Ahmad Walid`
+document.getElementById("para2-sec7").innerHTML =`"I’ve driven many cars over the years, but this one genuinely surprised me.  `
+document.getElementById("para3-sec7").innerHTML =`From the moment I pressed the accelerator, the power delivery felt smooth and confident.`
+document.getElementById("para4-sec7").innerHTML =`The handling impressed me the most. It feels balanced, giving me full control on every turn. "`
+
+document.getElementById("name3-sec7").innerHTML =`Mariam Samy`
+document.getElementById("para5-sec7").innerHTML =`"What impressed me most is how comfortable and reliable it is for everyday use. Whether I’m stuck in traffic or cruising on the highway, the ride stays stable and quiet. It’s the perfect balance between power and practicality."`
+
+
+
+
 
 
 
