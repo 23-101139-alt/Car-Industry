@@ -388,10 +388,13 @@ document.getElementById("title1-sec6").innerHTML =`Byd_yangwang`
 
 document.getElementById("para1-sec6").innerHTML =`represents the next level of electric luxury and performance. Designed with advanced engineering, cutting-edge features, and a bold modern identity, it delivers power, comfort, and innovation in one premium experience.`
 
+document.getElementById("title2-sec6").innerHTML =`Mclaren_gt `
+document.getElementById("para2-sec6").innerHTML =`Built for long-distance performance, this grand tourer delivers a rare mix of power, precision, and comfort. Its lightweight engineering and refined interior create a driving experience that feels both thrilling and effortless.`
 
 
 
-
+document.getElementById("title3-sec6").innerHTML =`Nissan_gt-r `
+document.getElementById("para3-sec6").innerHTML =`Known for its legendary power and precision, this high-performance machine delivers explosive acceleration and sharp handling that thrill every driver. Advanced engineering and intelligent all-wheel drive make it one of the most iconic sports cars on the road.`
 
 
 
