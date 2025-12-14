@@ -353,6 +353,45 @@ document.getElementById("link4-sec5").innerHTML =`Read More`
 
 
 
+// animationsec5
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".card-sec5-1").forEach(card => {
+  ScrollTrigger.create({
+    trigger: card,
+    start: "top 85%",
+    toggleActions: "restart none restart none", 
+    onEnter: () => gsap.to(card, { opacity: 1, y: 0, duration: 1, ease: "power2.out" }),
+    onLeaveBack: () => gsap.set(card, { opacity: 0, y: 200 }) 
+  });
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".card-sec5-2").forEach(card => {
+  ScrollTrigger.create({
+    trigger: card,
+    start: "top 85%",
+    toggleActions: "restart none restart none", 
+    onEnter: () => gsap.to(card, { opacity: 1, y: 0, duration: 1, ease: "power2.out" }),
+    onLeaveBack: () => gsap.set(card, { opacity: 0, y: 200 }) 
+  });
+});
+// endanimationsec5
+
+
+
+
+// sec6
+document.getElementById("haeder-sec6").innerHTML =`Customer Favorites`
+document.getElementById("title1-sec6").innerHTML =`Byd_yangwang`
+
+document.getElementById("para1-sec6").innerHTML =`represents the next level of electric luxury and performance. Designed with advanced engineering, cutting-edge features, and a bold modern identity, it delivers power, comfort, and innovation in one premium experience.`
+
+
+
+
+
 
 
 
