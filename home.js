@@ -503,7 +503,38 @@ gsap.utils.toArray(".box3-sec7").forEach(card => {
 });
 
 
+// footer
+document.getElementById("list-title1").innerHTML =`Products`
+document.getElementById("list-1").innerHTML =`Products preview`
+document.getElementById("list-2").innerHTML =`Stats`
+document.getElementById("list-3").innerHTML =`Main Features`
+document.getElementById("list-4").innerHTML =`Car Specifications `
+document.getElementById("list-5").innerHTML =`Similar Models `
+document.getElementById("list-6").innerHTML =`Gallery`
+document.getElementById("list-7").innerHTML =`People also View`
+document.getElementById("list-8").innerHTML =`Deals subscribe`
 
 
 
+document.getElementById("list-title2").innerHTML =`Suppliers`
+document.getElementById("list-9").innerHTML =`Become a Supplier`
+document.getElementById("list-10").innerHTML =`Approved Supplier`
+document.getElementById("list-11").innerHTML =`Certifications`
+document.getElementById("list-12").innerHTML =`Guidelines`
+document.getElementById("list-13").innerHTML =`Supplier Support`
+
+
+document.getElementById("list-title3").innerHTML =`About Us`
+document.getElementById("list-14").innerHTML =`Company Overview`
+document.getElementById("list-15").innerHTML =`Our Mission`
+document.getElementById("list-16").innerHTML =`Leadership Team`
+document.getElementById("list-17").innerHTML =`Careers`
+document.getElementById("list-18").innerHTML =`News`
+
+
+document.getElementById("list-title4").innerHTML =`Contact Us`
+document.getElementById("list-19").innerHTML =`Customer Support`
+document.getElementById("list-20").innerHTML =`Sales Inquiries`
+document.getElementById("list-21").innerHTML =`Feedback Form`
+document.getElementById("list-22").innerHTML =`FAQs`
 

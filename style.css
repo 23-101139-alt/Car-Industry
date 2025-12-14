@@ -1330,7 +1330,7 @@ height: fit-content;}
     padding: 125px 7.9% ;
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    justify-content: center;position: relative;
 }
 
 
@@ -1487,6 +1487,134 @@ height: fit-content;
     max-width: 100%;           
       align-items: stretch;
 }
+
+
+
+.pic1-sec7{position: absolute;
+    right: 0;
+    top: 254px;
+    z-index: -1;
+}
+.pic2-sec7{position: absolute;
+    left: 0;
+    bottom: 144px;
+    z-index: -1;}
+
+
+
+
+
+
+
+
+.footerr{width: 100%;
+height: 659.24px;
+   background-image: url(pic/pic35.png);
+    background-size: cover;
+    background-position: top;
+
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+    background-repeat: no-repeat;}
+
+.container-footer {
+    width: 100%;
+    height: 100%;
+    padding: 125px 7.9% 0;
+    box-sizing: border-box;
+    display: flex;flex-direction: column;
+    gap: 67px;align-items: center;
+    justify-content: center;
+    position: relative;}
+
+
+.logo-footer{
+    width: 303.06px;
+    height: 37px;
+}
+
+
+.big-nav-box-footer{    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 46px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1280px;}
+
+
+.list-footer{list-style-type: none;
+display: flex;
+flex-direction: column;
+gap: 40px;}
+
+
+.link-footer{text-decoration: none;}
+
+.title-footer{color: var(--white);
+font-family: Inter;
+font-size: 24px;
+font-weight: 700;}
+
+
+
+.sub-list-footer{list-style-type: none;
+display: flex;
+flex-direction: column;
+gap: 20px;}
+
+
+.small-navs{color: var(--fadedwhite);
+font-family: Inter;display: inline-block;
+font-size: 18px;
+font-weight: 500;
+position: relative;}
+
+.small-navs::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; 
+  right: 0;  
+  width: 0;
+  height: 2px;
+  background-color: var(--fadedwhite);
+  transition: width 0.3s ease;
+}
+
+
+.small-navs:hover::after {
+  width: 100%;
+  left: 0;    
+  right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1990,7 +2118,11 @@ gap: 30px;
     border-radius: 96px;
 }
 
+.pic2-sec7 {
+    width: 100%;}
 
+.pic1-sec7 {
+    width: 100%;}
 
 
 
@@ -2307,9 +2439,11 @@ gap: 38px;
     padding: 125px 7.3%;}
 
 
+.pic2-sec7 {
+    width: 100%;}
 
-
-
+.pic1-sec7 {
+    width: 100%;}
 
 }
 
