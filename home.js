@@ -177,12 +177,23 @@ gsap.utils.toArray(".main-card-sec2").forEach(card => {
   ScrollTrigger.create({
     trigger: card,
     start: "top 85%",
-    toggleActions: "restart none restart none", 
-    onEnter: () => gsap.to(card, { opacity: 1, y: 0, duration: 1, ease: "power2.out" }),
-    onLeaveBack: () => gsap.set(card, { opacity: 0, y: 200 }) 
+    toggleActions: "restart none restart none",
+
+    onEnter: () =>
+      gsap.fromTo(
+        card,
+        { opacity: 0, y: 200 },
+        { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+      ),
+
+    onEnterBack: () =>
+      gsap.fromTo(
+        card,
+        { opacity: 0, y: 200 },
+        { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+      )
   });
 });
-
 
 // endanimationsec2
 
@@ -356,27 +367,27 @@ document.getElementById("link4-sec5").innerHTML =`Read More`
 // animationsec5
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.utils.toArray(".card-sec5-1").forEach(card => {
+gsap.utils.toArray(".card-sec5-1, .card-sec5-2").forEach(card => {
   ScrollTrigger.create({
     trigger: card,
     start: "top 85%",
-    toggleActions: "restart none restart none", 
-    onEnter: () => gsap.to(card, { opacity: 1, y: 0, duration: 1, ease: "power2.out" }),
-    onLeaveBack: () => gsap.set(card, { opacity: 0, y: 200 }) 
+
+    onEnter: () =>
+      gsap.fromTo(
+        card,
+        { opacity: 0, y: 200 },
+        { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+      ),
+
+    onEnterBack: () =>
+      gsap.fromTo(
+        card,
+        { opacity: 0, y: 200 },
+        { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+      )
   });
 });
 
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.utils.toArray(".card-sec5-2").forEach(card => {
-  ScrollTrigger.create({
-    trigger: card,
-    start: "top 85%",
-    toggleActions: "restart none restart none", 
-    onEnter: () => gsap.to(card, { opacity: 1, y: 0, duration: 1, ease: "power2.out" }),
-    onLeaveBack: () => gsap.set(card, { opacity: 0, y: 200 }) 
-  });
-});
 // endanimationsec5
 
 
@@ -465,42 +476,29 @@ document.getElementById("para5-sec7").innerHTML =`"What impressed me most is how
 
 // animationsec7
 gsap.registerPlugin(ScrollTrigger);
+gsap.utils
+  .toArray(".box1-sec7, .box2-sec7, .box3-sec7")
+  .forEach(card => {
+    ScrollTrigger.create({
+      trigger: card,
+      start: "top 95%",
 
-gsap.utils.toArray(".box1-sec7").forEach(card => {
-  ScrollTrigger.create({
-    trigger: card,
-    start: "top 85%",
-    toggleActions: "restart none restart none", 
-    onEnter: () => gsap.to(card, { opacity: 1, y: 0, duration: 1, ease: "power2.out" }),
-    onLeaveBack: () => gsap.set(card, { opacity: 0, y: 200 }) 
+      onEnter: () =>
+        gsap.fromTo(
+          card,
+          { opacity: 0, y: 200 },
+          { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+        ),
+
+      onEnterBack: () =>
+        gsap.fromTo(
+          card,
+          { opacity: 0, y: 200 },
+          { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+        )
+    });
   });
-});
 
-
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.utils.toArray(".box2-sec7").forEach(card => {
-  ScrollTrigger.create({
-    trigger: card,
-    start: "top 85%",
-    toggleActions: "restart none restart none", 
-    onEnter: () => gsap.to(card, { opacity: 1, y: 0, duration: 1, ease: "power2.out" }),
-    onLeaveBack: () => gsap.set(card, { opacity: 0, y: 200 }) 
-  });
-});
-
-
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.utils.toArray(".box3-sec7").forEach(card => {
-  ScrollTrigger.create({
-    trigger: card,
-    start: "top 85%",
-    toggleActions: "restart none restart none", 
-    onEnter: () => gsap.to(card, { opacity: 1, y: 0, duration: 1, ease: "power2.out" }),
-    onLeaveBack: () => gsap.set(card, { opacity: 0, y: 200 }) 
-  });
-});
 
 
 // footer
