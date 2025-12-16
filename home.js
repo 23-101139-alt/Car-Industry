@@ -538,3 +538,9 @@ document.getElementById("list-20").innerHTML =`Sales Inquiries`
 document.getElementById("list-21").innerHTML =`Feedback Form`
 document.getElementById("list-22").innerHTML =`FAQs`
 
+document.getElementById("list-23").innerHTML =`Privacy Policy`
+document.getElementById("list-24").innerHTML =`Terms & Conditions`
+document.getElementById("list-25").innerHTML =`Cookies`
+
+document.getElementById("list-26").innerHTML =`@2024,MGY,AllRightsReservedbytheMGY`
+
