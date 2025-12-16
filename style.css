@@ -34,6 +34,7 @@
 --color1-car:#8A9604;
 --color2-car:#033977;
 --color3-car:#AA1717;
+--design:#153B44;
 }
 
 
@@ -190,7 +191,7 @@ background-color: var(--header-linescolor);}
 
 
 .sec1{width: 100%;height: 100vh;
-    background-size: cover;
+    background-size: cover;   min-height: 847px;
 background-image: url(pic/pic4.png);
     }
 
@@ -1642,17 +1643,6 @@ line-height: 150%; /* 15px */}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* page2 */
 
 .sec1-p2 {
@@ -1682,10 +1672,10 @@ line-height: 150%; /* 15px */}
 
 
 .text-box-sec1-p2{
-    display: flex;    width: 530px;
+    display: flex;    width: 63%;
     flex-direction: column;
     margin-top: 267.85px;
-    gap: 64px;
+    gap: 64px;position: relative;z-index: 4;
 }
 
 .header-sec1-p2{
@@ -1790,7 +1780,7 @@ font-weight: 700;}
 .cta-sec1-p2{display: inline-flex;
 height: 54px;
 justify-content: center;
-align-items: center;
+align-items: center;border-color: transparent;
 gap: 10px;
 padding: 18px 28px;width: 251px;
 border-radius: 14px;
@@ -1817,14 +1807,55 @@ line-height: normal;}
 
 
 
+.left-box-sec1-p2{
+position: absolute;
+    right: 0;
+    bottom: 18%;
+    width: 37%;
+    height: 606.009px;
+    aspect-ratio: 1364.58 / 606.01;
+    border-radius: 82px 0 0 82px;
+    background-color: var(--design);
+    background-image: url(pic/pic38.png);
+}
+
+
+
+.model-one-p2 .custom-ar-btn {
+  position: absolute;
+  top: 70%;    top: -14px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+
+
+.model-one-p2 {
+width: 148%;
+    height: 100%;
+    position: absolute;
+right: -38%;
+
+    height: 102%;
+   
+}
+
+
+.containermodel-sec1-p2 {
+    width: 139%;
+    height: 119%;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
 
 
 
 
-
-
-
-
+.sec1-p2 {
+    min-height: 893px;
+}
 
 
 
@@ -1876,7 +1907,7 @@ line-height: normal;}
     
 .sec1 {
             background-image: url(pic/pic7.png);
-       
+       min-height: 873px;
               background-position: center -170px;
         background-size: auto;
         background-repeat: no-repeat;
@@ -2380,6 +2411,96 @@ gap: 30px;
 
 
 
+    .model-one-p2 {
+        width: 178%;
+        position: absolute;
+        right: -59%;
+        height: auto;
+        aspect-ratio: 1056 / 735;
+    }
+
+.containermodel-sec1-p2 {
+    width: 139%;
+    height: 119%;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+}
+
+.left-box-sec1-p2 {
+   bottom: 8%;        width: 53%;
+
+    aspect-ratio: 465 / 606.009;
+    height: auto;        top: auto;
+}
+
+
+.text-box-sec1-p2 {
+        display: flex;
+        margin-top: 170px;
+        width: 98%;
+          gap: 35px;
+    }
+
+.container-third-box-sec1-p2 {
+    display: flex;
+            width: fit-content;}
+
+
+.header-sec1-p2 {
+        font-family: Syncopate;
+        font-size: clamp(32px, 9vw, 40px);
+    
+}
+
+.main-info-sec1-p2 {
+    width: 100%;
+    height: 100%;
+    padding: 0 20px 0 20px;}
+
+
+.container-third-box-sec1-p2 {
+    width: clamp(260px, 35vw, 347px);
+    padding: clamp(20px, 2vw, 28px);
+    gap: clamp(12px, 2vw, 20px);
+    border-radius: clamp(14px, 2vw, 22.889px);
+}
+
+
+
+.price-sec1-p2 {
+          font-size: 24px;
+}
+
+.cta-sec1-p2 {
+    width: clamp(200px, 28vw, 251px);
+    height: clamp(52px, 6vw, 54px);
+}
+
+
+.sec1-p2 {
+    width: 100%;
+    height: 100vh;
+    min-height: 900px;}
+
+.subheader-sec1-p2 {
+    font-size: 20px;
+}
+.text-feature-sec1-p2 {
+    font-size: 16px;}
+
+
+.second-sub-box-sec1-p2 {
+    gap: 20px;
+}
+
+
+.cta-text-sec1-p2 {
+    font-size: 16px;}
+
+
 
 
 
@@ -2458,7 +2579,7 @@ gap: 30px;
     
 .sec1 {
             background-image: url(pic/pic7.png);
-       
+       min-height: 847px;
         background-position: center -100px;
         background-size: auto;
         background-repeat: no-repeat;
@@ -2722,7 +2843,102 @@ gap: 38px;
     height: 100%;left: 0;}
 
 
+
+
+    .model-one-p2 {
+        width: 178%;
+        position: absolute;
+        right: -59%;
+        height: auto;
+        aspect-ratio: 1056 / 735;
+    }
+
+.containermodel-sec1-p2 {
+    width: 139%;
+    height: 119%;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
 }
+
+.left-box-sec1-p2 {
+   bottom: 8%;        min-width: 256px;
+
+    aspect-ratio: 465 / 606.009;
+    height: auto;        top: auto;
+}
+
+
+.text-box-sec1-p2 {
+        display: flex;
+        margin-top: 195px;
+        width: 100%;
+          gap: 35px;
+    }
+
+.container-third-box-sec1-p2 {
+    display: flex;
+            width: fit-content;}
+
+
+.header-sec1-p2 {
+        font-family: Syncopate;
+        font-size: clamp(42px, 9vw, 64px);
+    
+}
+
+.main-info-sec1-p2 {
+    width: 100%;
+    height: 100%;
+    padding: 0 7.3% 0 7.3%;}
+
+
+.container-third-box-sec1-p2 {
+    width: clamp(260px, 35vw, 347px);
+    padding: clamp(20px, 2vw, 28px);
+    gap: clamp(12px, 2vw, 20px);
+    border-radius: clamp(14px, 2vw, 22.889px);
+}
+
+
+
+.price-sec1-p2 {
+    font-size: clamp(28px, 3vw, 34px);
+}
+
+.cta-sec1-p2 {
+    width: clamp(200px, 28vw, 251px);
+    height: clamp(52px, 6vw, 54px);
+}
+
+
+.sec1-p2 {
+    width: 100%;
+    height: 100vh;
+    min-height: 930px;}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2738,7 +2954,7 @@ gap: 38px;
 .navbar2 {
         gap: 4.3%;;}
 
-.sec1 {background-image: url(pic/pic6.png);}
+.sec1 {background-image: url(pic/pic6.png);   min-height: 847px;}
 
 .container-all-info-sec1 {
     max-width: 100%;
@@ -2813,6 +3029,44 @@ font-weight: 500;
     max-width: 100%;}
 
 
+
+.model-one-p2 {
+        width: 159%;
+        position: absolute;
+        right: -45%;
+        height: auto;
+        aspect-ratio: 1056 / 735;
+ 
+}
+
+.containermodel-sec1-p2 {
+    width: 139%;
+    height: 119%;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+}
+
+.left-box-sec1-p2 {
+    bottom: 18%;
+    aspect-ratio: 465 / 606.009;
+    height: auto;        top: auto;
+}
+
+
+.text-box-sec1-p2 {
+    display: flex;
+    width: 58%;}
+
+.container-third-box-sec1-p2 {
+    display: flex;
+            width: fit-content;}
+
+.sec1-p2 {
+    min-height: 900px;
+}
 
 
 }
