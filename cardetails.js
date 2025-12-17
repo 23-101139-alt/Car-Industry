@@ -17,6 +17,38 @@ document.getElementById("list4bg").innerHTML = "Contact Us";
 
 // header
 
+
+// sec1-animation
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".containermodel-sec1-p2").forEach(card => {
+  ScrollTrigger.create({
+    trigger: card,
+    start: "top 85%",
+    toggleActions: "restart none restart none",
+
+    onEnter: () =>
+      gsap.fromTo(
+        card,
+        { opacity: 0, x: 300 },
+        { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+      ),
+
+    onEnterBack: () =>
+      gsap.fromTo(
+        card,
+        { opacity: 0, x: 300 },
+        { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+      )
+  });
+});
+
+
+
+
+
+
 // sec1
 
 document.addEventListener("DOMContentLoaded", () => {
