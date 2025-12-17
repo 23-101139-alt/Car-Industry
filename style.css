@@ -1308,6 +1308,23 @@ flex-shrink: 0;}
 .navigation1-sec6:hover{background-color: var(--ctahover);}
 
 
+.navigation0-sec6{display: flex;
+width: 59.323px;position: absolute;
+height: 59.323px;top: 14px;right: 14px;
+background-color: var(--cta);border-radius: 29.661px;
+align-items: center;justify-content: center;
+transition: all 200ms linear;z-index: 111;
+gap: 7.948px;
+flex-shrink: 0;}
+
+
+.navigation0-sec6:hover{background-color: var(--ctahover);}
+
+
+
+
+
+
 .navigation2-sec6{display: flex;z-index: 11;
 width: 59.323px;position: absolute;
 height: 59.323px;top: 14px;left: 336.21px;

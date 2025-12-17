@@ -51,6 +51,53 @@ document.getElementById("cta-text").innerHTML = "Book Now";
 
 
 
+// localstorage
+let product = JSON.parse(localStorage.getItem("selectedProduct"));
+
+if (!product) {
+  alert("No product selected!");
+  window.location.href = "index.html";
+}
+
+
+document.getElementById("haeder-sec1-p2").innerHTML = product.name;
+document.getElementById("answer1").innerHTML = product.name;
+document.getElementById("answer2").innerHTML = product.year;
+document.getElementById("answer3").innerHTML = product.category;
+document.getElementById("price").innerHTML = product.price;
+
+
+
+const modelViewer = document.querySelector(".model-one-p2");
+
+
+modelViewer.src = product.model;
+modelViewer.poster = product.poster;
+
+
+if (product.display) {
+  if (product.display.cameraOrbit) {
+    modelViewer.setAttribute("camera-orbit", product.display.cameraOrbit);
+  }
+  if (product.display.fieldOfView) {
+    modelViewer.setAttribute("field-of-view", product.display.fieldOfView);
+  }
+ if (product.display["camera-target"]) modelViewer.cameraTarget = product.display["camera-target"];
+ if (product.display.right) modelViewer.style.right = product.display.right;
+   if (product.display.top) modelViewer.style.top = product.display.top;
+    if (product.display.height) modelViewer.style.height = product.display.height;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

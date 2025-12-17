@@ -104,28 +104,12 @@ document.getElementById("header-sec2").innerHTML = "Featured Models";
 
 
 let cardssec2 = [
-  { model: "models/2024_byd_yangwang_u9.glb",
-     poster: `models/poster2.png`,
-    title:`BYD Yangwang U9`,
-    stitle:`An electric supercar built for extreme performance.`,
- height: "210%" },
-      { model: "models/2024_byd_seal.glb",
-     poster: `models/poster3.png`,
-    title:`BYD Seal`,
-    stitle:`A refined EV crafted for comfort and agility.` ,
- height: "95%" },
-       { model: "models/2019_audi_r8_coupe.glb",
-     poster: `models/poster4.png`,
-    title:`Audi_r8_coupe`,
-    stitle:`Advanced electric performance with premium style.` ,
- height: "210%" },
-        { model: "models/2020_bmw_m850i_gran_coupe.glb",
-     poster: `models/poster5.png`,
-    title:`BMW M850i Gran Coupe`,
-    stitle:`A perfect blend of speed, comfort, and precision.` ,
- height: "210%" },
-
+  { id: "byd-u9", model: "models/2024_byd_yangwang_u9.glb", poster: "models/poster2.png", title: "BYD Yangwang U9", stitle: "An electric supercar built for extreme performance.", height: "210%" },
+  { id: "byd-seal-u2", model: "models/2024_byd_seal.glb", poster: "models/poster3.png", title: "BYD Seal", stitle: "A refined EV crafted for comfort and agility.", height: "95%" },
+  { id: "audi-r8", model: "models/2019_audi_r8_coupe.glb", poster: "models/poster4.png", title: "Audi R8 Coupe", stitle: "Advanced electric performance with premium style.", height: "210%" },
+  { id: "bmw-m850", model: "models/2020_bmw_m850i_gran_coupe.glb", poster: "models/poster5.png", title: "BMW M850i Gran Coupe", stitle: "A perfect blend of speed, comfort, and precision.", height: "210%" },
 ];
+
 
 for (let i = 0; i < cardssec2.length; i++) {
 
@@ -541,4 +525,57 @@ document.getElementById("list-24").innerHTML =`Terms & Conditions`
 document.getElementById("list-25").innerHTML =`Cookies`
 
 document.getElementById("list-26").innerHTML =`@2024,MGY,AllRightsReservedbytheMGY`
+
+
+// localstorage
+
+let products = JSON.parse(localStorage.getItem("products"));
+
+  // Hero CTA
+document.querySelector(".cta-sec1").addEventListener("click", () => {
+  localStorage.setItem("selectedProduct", JSON.stringify(products[0]));
+  window.location.href = "cardetails.html";
+});
+
+
+  //sec2 CTAsss
+
+document.querySelectorAll(".cta-sec2").forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    const selectedId = cardssec2[i].id;
+    const selectedProduct = products.find(p => p.id === selectedId);
+    if (selectedProduct) {
+      localStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
+      window.location.href = "cardetails.html";
+    } else {
+      alert("Product not found!");
+    }
+  });
+});
+
+
+
+  // sec3 CTA
+document.querySelector(".cta-sec3").addEventListener("click", () => {
+  localStorage.setItem("selectedProduct", JSON.stringify(products[5]));
+  window.location.href = "cardetails.html";
+});
+
+
+  // sec6 CTA
+document.querySelector(".navigation0-sec6").addEventListener("click", () => {
+  localStorage.setItem("selectedProduct", JSON.stringify(products[6]));
+  window.location.href = "cardetails.html";
+});
+
+document.querySelector(".navigation2-sec6").addEventListener("click", () => {
+  localStorage.setItem("selectedProduct", JSON.stringify(products[7]));
+  window.location.href = "cardetails.html";
+});
+
+
+document.querySelector(".navigation1-sec6").addEventListener("click", () => {
+  localStorage.setItem("selectedProduct", JSON.stringify(products[8]));
+  window.location.href = "cardetails.html";
+});
 
