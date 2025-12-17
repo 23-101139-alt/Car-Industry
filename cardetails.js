@@ -19,10 +19,7 @@ document.getElementById("list4bg").innerHTML = "Contact Us";
 
 // sec1
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
-
 
   let product = JSON.parse(localStorage.getItem("selectedProduct"));
   if (!product) {
@@ -31,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  // pagechangecontent
+  // PAGE TEXT CONTENT
   document.getElementById("haeder-sec1-p2").innerHTML = product.name;
   document.getElementById("feature1").innerHTML = "Model:";
   document.getElementById("answer1").innerHTML = product.name;
@@ -43,7 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("price").innerHTML = product.price;
   document.getElementById("cta-text").innerHTML = "Book Now";
 
-  // editsmodel
+
+  // MODEL VIEWER SETUP
   const modelViewer = document.querySelector(".model-one-p2");
   modelViewer.src = product.model;
   modelViewer.poster = product.poster;
@@ -57,60 +55,62 @@ document.addEventListener("DOMContentLoaded", () => {
     if (product.display.height) modelViewer.style.height = product.display.height;
   }
 
-
-  // COLORchange
-
+  
+  // COLORsBUTTONS
   const colorButtons = document.querySelectorAll(".color1-p2, .color2-p2, .color3-p2");
 
 
-  const specialBodyMaterials = {
-    "audi-r8": ["Car_Body", "Body_Mat"],
-    "lotus-emira": ["Body"],
-    "mclaren-gt": ["CarPaint"],
-    "nissan-gtr": ["r8Vehicle_Exterior_mm_ext1", "MAT02", "MAT03"]
+  const modelButtonColors = {
+    "byd-seal-u": ["#8A9604", "#033977", "#AA1717"],
+    "byd-u9": ["#CB9A00", "#0000FF", "#00FF00"],
+    "byd-seal-u2": ["#51F9E8", "#c57506ff", "#198adbff"],
+    "audi-r8": ["#04B63A", "#192ea4ff", "#b61515ff"],
+    "bmw-m850": ["#3CA7F7", "#d8ea17ff", "#ec0d0dff"],
+    "lotus-emira": ["#73726E", "#0defb6ff", "#0931d1ff"],
+    "yangwang-u7": ["#0aca0aff", "#6d8000ff", "#0a57caff"],
+    "mclaren-gt": ["#00568D", "#800004ff", "#00800fff"],
+    "nissan-gtr": ["#BDB52F", "#005ccdff", "#00ff51ff"]
   };
 
 
-  const specialExcludeMaterials = {
-    "nissan-gtr": ["CARBON", "black_GLass", "r8Vehicle_Exterior_mm_windows1", "r8Vehicle_Exterior_mm_lights1", "r8Vehicle_Exterior_mm_tyre1", "r8Vehicle_Exterior_mm_wheel1"]
-  };
+  function updateColorButtons(productId) {
+    const colors = modelButtonColors[productId] || ["#8A9604", "#033977", "#AA1717"];
+    colorButtons.forEach((btn, index) => {
+      if (colors[index]) {
+        btn.style.background = colors[index];
+        btn.dataset.color = colors[index];
+      }
+    });
+  }
+  updateColorButtons(product.id);
 
 
   const excludeKeywords = ["mirror", "tire", "rim", "wheel", "glass", "light"];
+  const excludeColors = [
+    [0, 0, 0],    
+    [10, 10, 10],   
+    [20, 20, 20]  
+  ];
+
+  function isBlackish(color) {
+  
+    return excludeColors.some(ex => Math.abs(color[0]*255 - ex[0]) <= 20 &&
+                                    Math.abs(color[1]*255 - ex[1]) <= 20 &&
+                                    Math.abs(color[2]*255 - ex[2]) <= 20);
+  }
+
 
   modelViewer.addEventListener("load", () => {
     const materials = modelViewer.model.materials;
-    let bodyMaterials = [];
 
-    if (specialBodyMaterials[product.id]) {
-
-      bodyMaterials = materials.filter(mat =>
-        specialBodyMaterials[product.id].some(key => mat.name.toLowerCase() === key.toLowerCase())
-      );
-
-
-      bodyMaterials = bodyMaterials.filter(mat =>
-        !(excludeKeywords.some(kw => mat.name.toLowerCase().includes(kw)) ||
-          (specialExcludeMaterials[product.id] && specialExcludeMaterials[product.id].includes(mat.name)))
-      );
-
-    } else {
-
-      bodyMaterials = materials.filter(mat =>
-        (mat.name.toLowerCase().includes("body") || mat.name.toLowerCase().includes("paint")) &&
-        !excludeKeywords.some(kw => mat.name.toLowerCase().includes(kw))
-      );
-    }
-
-    if (bodyMaterials.length === 0) {
-
-      bodyMaterials = materials.filter(mat =>
-        mat.pbrMetallicRoughness &&
-        !excludeKeywords.some(kw => mat.name.toLowerCase().includes(kw)) &&
-        !(specialExcludeMaterials[product.id] && specialExcludeMaterials[product.id].includes(mat.name))
-      );
-    }
-
+    let bodyMaterials = materials.filter(mat => {
+      if (!mat.pbrMetallicRoughness) return false;
+      const nameLower = mat.name.toLowerCase();
+      if (excludeKeywords.some(kw => nameLower.includes(kw))) return false;
+      const baseColor = mat.pbrMetallicRoughness.baseColorFactor || [1,1,1,1];
+      if (isBlackish(baseColor)) return false;
+      return true;
+    });
 
     colorButtons.forEach(btn => {
       btn.addEventListener("click", () => {
@@ -135,8 +135,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const nums = color.match(/\d+/g).map(Number);
     return [nums[0]/255, nums[1]/255, nums[2]/255, 1];
   }
-
 });
+
 
 
 
