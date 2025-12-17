@@ -92,6 +92,39 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+  document.getElementById("header-sec3").innerHTML = "Main Features ";
+  document.getElementById("para-sec3").innerHTML = product.para_sec3 || "-";
+  document.getElementById("subheader-sec3").innerHTML = "Best Highlights:";
+
+const container = document.getElementById("highlightsContainer");
+
+container.innerHTML = ""; 
+
+product.highlights_sec3.forEach(text => {
+  const row = document.createElement("div");
+  row.className = "row-sec3-p2";
+
+  row.innerHTML = `
+    <img src="pic/pic40.png" class="arrow-img-sec3-p2">
+    <h3 class="info-sec3-p2">${text}</h3>
+  `;
+
+  container.appendChild(row);
+});
+
+  const modelViewerr = document.querySelector(".model-one-p2-sec3");
+  modelViewerr.src = product.model;
+  modelViewerr.poster = product.poster2;
+
+if (product.display2) {
+  if (product.display2.cameraOrbit) modelViewerr.setAttribute("camera-orbit", product.display2.cameraOrbit);
+  if (product.display2.fieldOfView) modelViewerr.setAttribute("field-of-view", product.display2.fieldOfView);
+  if (product.display2["camera-target"]) modelViewerr.cameraTarget = product.display2["camera-target"];
+  if (product.display2.right) modelViewerr.style.right = product.display2.right;
+  if (product.display2.top) modelViewerr.style.top = product.display2.top;
+  if (product.display2.height) modelViewerr.style.height = product.display2.height;
+}
+
 
 
   // MODEL VIEWER SETUP

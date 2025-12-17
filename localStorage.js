@@ -7,13 +7,22 @@ localStorage.setItem("products", JSON.stringify([
     price: "2,650,000 EGP",
     model: "models/2024_byd_seal_u_dm-i.glb",
     poster: "models/poster10-page2.png",
-    numb1_sec2:"300+",
-    para1_sec2:"This hybrid SUV delivers impressive horsepower, providing smooth, responsive, and highly efficient performance for both city and highway driving.",
-    numb2_sec2:"70+",
-    para2_sec2:"Provides an impressive number of kilometers of pure electric driving, making daily fuel-free commutes highly efficient and environmentally friendly.",
-    numb3_sec2:"500+",
-    para3_sec2:"Generates strong Newton-meters of torque, giving exceptionally responsive acceleration and powerful performance at any speed."
+    numb1_sec2: "300+",
+    para1_sec2: "This hybrid SUV delivers impressive horsepower, providing smooth, responsive, and highly efficient performance for both city and highway driving.",
+    numb2_sec2: "70+",
+    para2_sec2: "Provides an impressive number of kilometers of pure electric driving, making daily fuel-free commutes highly efficient and environmentally friendly.",
+    numb3_sec2: "500+",
+    para3_sec2: "Generates strong Newton-meters of torque, giving exceptionally responsive acceleration and powerful performance at any speed.",
+    para_sec3: "The BYD Seal U DM-i is engineered to deliver a refined balance between performance, comfort, and advanced technology. Its intelligent plug-in hybrid system allows seamless switching between electric and hybrid driving modes, ensuring excellent fuel efficiency without sacrificing power. Inside, the SUV offers a premium cabin experience with modern design, smart connectivity, and advanced safety features. Designed for families and daily commuters, it provides a smooth, confident, and environmentally responsible driving experience in all conditions.",
+    highlights_sec3: [
+      "Efficient plug-in hybrid system",
+      "Smooth and quiet electric driving",
+      "Spacious and modern interior",
+      "Advanced safety and driver assistance"
+    ],
+    poster2: "models/poster19.png",
   },
+
   {
     id: "byd-u9",
     name: "BYD Yangwang U9",
@@ -24,12 +33,21 @@ localStorage.setItem("products", JSON.stringify([
     poster: "models/poster11.png",
     display: { top: "2%", height: "107%" },
     numb1_sec2: "750+",
-    para1_sec2:"This electric supercar offers extreme acceleration with precise handling, giving drivers an exhilarating experience and unmatched control at every turn.",
+    para1_sec2: "This electric supercar offers extreme acceleration with precise handling, giving drivers an exhilarating experience.",
     numb2_sec2: "120+",
-    para2_sec2:"Reaches top speeds with perfect control, delivering an exhilarating driving experience for enthusiasts who love high-performance vehicles.",
+    para2_sec2: "Reaches top speeds with perfect control, delivering an exhilarating high-performance experience.",
     numb3_sec2: "900+",
-    para3_sec2:"Delivers immense torque for ultra-responsive and thrilling acceleration, giving a true sense of speed and power on every drive."
+    para3_sec2: "Delivers immense torque for ultra-responsive and thrilling acceleration.",
+    para_sec3: "The Yangwang U9 represents the future of electric supercars by combining bold design with cutting-edge engineering. Built for performance enthusiasts, it delivers breathtaking acceleration, advanced aerodynamics, and a highly responsive electric drivetrain. Every detail is focused on speed, stability, and control, offering a driving experience that pushes the limits of modern electric performance while maintaining precision and confidence at extreme speeds.",
+    highlights_sec3: [
+      "Extreme electric acceleration",
+      "Advanced aerodynamic design",
+      "High-performance electric drivetrain",
+      "Track-focused driving dynamics"
+    ],
+    poster2: "models/poster20.png",
   },
+
   {
     id: "byd-seal-u2",
     name: "BYD Seal",
@@ -40,12 +58,22 @@ localStorage.setItem("products", JSON.stringify([
     poster: "models/poster12.png",
     display: { cameraOrbit: "35deg 70deg 0.15m", fieldOfView: "48deg", "camera-target": "0m 0.4m 0m", right: "-45%", top: "9%", height: "90%" },
     numb1_sec2: "350+",
-    para1_sec2:"This hybrid SUV combines efficiency and comfort, delivering a smooth ride while offering advanced hybrid technology for everyday practicality.",
+    para1_sec2: "This hybrid SUV combines efficiency and comfort, delivering a smooth and practical driving experience.",
     numb2_sec2: "80+",
-    para2_sec2:"Offers a significant electric driving range, perfect for daily commutes without using fuel, while ensuring smooth and quiet operation.",
+    para2_sec2: "Offers a strong electric driving range for fuel-free daily commuting.",
     numb3_sec2: "450+",
-    para3_sec2:"Provides smooth torque delivery, ensuring confident and responsive acceleration in all driving conditions."
+    para3_sec2: "Provides smooth torque delivery for confident acceleration.",
+    para_sec3: "The BYD Seal is designed to meet the demands of modern drivers by blending sustainability with smart performance. Its refined interior, intelligent technology, and smooth hybrid powertrain ensure comfort during everyday driving. With a focus on efficiency, safety, and practicality, it offers a reliable and stylish solution for urban commuting and longer journeys alike.",
+    highlights_sec3: [
+      "Hybrid efficiency for daily driving",
+      "Comfort-focused suspension setup",
+      "Quiet electric operation",
+      "Modern infotainment system"
+    ],
+    display2: { cameraOrbit: "90deg 90deg 0.1m", fieldOfView: "30deg", top: "-9%", right: "-47%" },
+    poster2: "models/poster21.png",
   },
+
   {
     id: "audi-r8",
     name: "Audi R8 Coupe",
@@ -56,12 +84,22 @@ localStorage.setItem("products", JSON.stringify([
     poster: "models/poster13.png",
     display: { fieldOfView: "20deg", top: "-10%", height: "123%" },
     numb1_sec2: "562",
-    para1_sec2:"The iconic Audi R8 Coupe is powered by a V10 engine, delivering thrilling sports performance with a perfect balance of speed, agility, and driving pleasure.",
+    para1_sec2: "The iconic Audi R8 Coupe is powered by a naturally aspirated V10 engine.",
     numb2_sec2: "315",
-    para2_sec2:"Achieves an impressive top speed, providing exhilarating performance and high-speed stability, perfect for both road and track driving.",
+    para2_sec2: "Achieves impressive top speeds with excellent stability.",
     numb3_sec2: "540+",
-    para3_sec2:"Offers powerful torque to deliver quick, precise acceleration, making every drive feel thrilling and controlled."
+    para3_sec2: "Delivers powerful torque for thrilling acceleration.",
+    para_sec3: "The Audi R8 Coupe blends motorsport heritage with everyday usability, creating a true supercar experience. Its naturally aspirated V10 engine delivers an unforgettable sound and instant response, while the precise handling and quattro all-wheel-drive system provide confidence at any speed. With its aggressive design and premium craftsmanship, the R8 stands as an icon of performance and engineering excellence.",
+    highlights_sec3: [
+      "Naturally aspirated V10 engine",
+      "Quattro all-wheel drive",
+      "Aggressive supercar design",
+      "Premium interior craftsmanship"
+    ]
+    ,
+    poster2: "models/poster22.png",
   },
+
   {
     id: "bmw-m850",
     name: "BMW M850i Gran Coupe",
@@ -72,12 +110,22 @@ localStorage.setItem("products", JSON.stringify([
     poster: "models/poster14.png",
     display: { right: "-43%" },
     numb1_sec2: "523",
-    para1_sec2:"The BMW M850i Gran Coupe is a luxurious performance coupe, blending cutting-edge technology with powerful performance for a refined and dynamic driving experience.",
+    para1_sec2: "A luxury performance coupe blending comfort and power.",
     numb2_sec2: "310",
-    para2_sec2:"Offers high top speed while maintaining smooth and refined performance, combining luxury with sporty excitement for the driver.",
+    para2_sec2: "High top speed with smooth and refined driving.",
     numb3_sec2: "500+",
-    para3_sec2:"Torque is finely tuned to provide effortless acceleration, allowing confident and dynamic driving in any condition."
+    para3_sec2: "Torque ensures effortless acceleration.",
+    para_sec3: "The BMW M850i Gran Coupe is crafted for drivers who seek both luxury and performance. Its powerful engine, advanced driving technologies, and refined suspension deliver a smooth yet dynamic driving experience. Inside, premium materials, modern infotainment, and advanced safety systems create a sophisticated environment that makes every journey comfortable, confident, and engaging.",
+    highlights_sec3: [
+      "Twin-turbo V8 performance",
+      "Luxury-focused interior design",
+      "Advanced driving assistance",
+      "Dynamic all-wheel drive"
+    ]
+        ,
+    poster2: "models/poster23.png",
   },
+
   {
     id: "lotus-emira",
     name: "Lotus Emira V6",
@@ -88,12 +136,22 @@ localStorage.setItem("products", JSON.stringify([
     poster: "models/poster15.png",
     display: { height: "112%", top: "-2%" },
     numb1_sec2: "400",
-    para1_sec2:"The Lotus Emira V6 is a lightweight sports car offering excellent handling, agility, and a thrilling driving experience for enthusiasts seeking performance and precision.",
+    para1_sec2: "A lightweight sports car built for driving purity.",
     numb2_sec2: "290",
-    para2_sec2:"Reaches a strong top speed while remaining stable and agile, giving the driver a responsive and thrilling ride.",
+    para2_sec2: "Strong top speed with excellent balance.",
     numb3_sec2: "420+",
-    para3_sec2:"Torque is optimized for instant acceleration, allowing precise and powerful control during every driving maneuver."
+    para3_sec2: "Instant torque for sharp acceleration.",
+    para_sec3: "The Lotus Emira is designed with a pure focus on driving engagement and precision. Its lightweight chassis, finely tuned suspension, and responsive power delivery create an immersive driving experience. Built for enthusiasts, it delivers exceptional feedback, balance, and control, making every drive feel connected and rewarding on both road and track.",
+    highlights_sec3: [
+      "Lightweight chassis design",
+      "Driver-focused cockpit",
+      "Exceptional handling balance",
+      "Engaging V6 performance"
+    ]
+       ,
+    poster2: "models/poster24.png",
   },
+
   {
     id: "yangwang-u7",
     name: "BYD Yangwang U7",
@@ -104,12 +162,22 @@ localStorage.setItem("products", JSON.stringify([
     poster: "models/poster16.png",
     display: { fieldOfView: "20deg", right: "-42%" },
     numb1_sec2: "600+",
-    para1_sec2:"This luxury electric sedan provides a smooth ride with advanced features, combining comfort, performance, and cutting-edge technology in one elegant package.",
+    para1_sec2: "A luxury electric sedan offering smooth and refined driving.",
     numb2_sec2: "150+",
-    para2_sec2:"Provides a long-range electric drive, perfect for efficient and comfortable travel while maintaining luxurious ride quality.",
+    para2_sec2: "Long electric range for comfortable travel.",
     numb3_sec2: "700+",
-    para3_sec2:"Torque delivers effortless power, enabling smooth and confident acceleration for a refined driving experience."
+    para3_sec2: "Effortless torque delivery for confident performance.",
+    para_sec3: "The Yangwang U7 redefines electric luxury by combining elegant design with advanced electric technology. Its quiet performance, spacious interior, and intelligent systems create a refined driving experience. Designed for comfort and efficiency, it offers premium materials, smooth acceleration, and innovative features that elevate everyday driving into a truly luxurious experience.",
+    highlights_sec3: [
+      "Luxury electric drivetrain",
+      "Silent and smooth ride quality",
+      "High-end interior materials",
+      "Advanced intelligent systems"
+    ]
+         ,
+    poster2: "models/poster25.png",
   },
+
   {
     id: "mclaren-gt",
     name: "McLaren GT",
@@ -120,12 +188,22 @@ localStorage.setItem("products", JSON.stringify([
     poster: "models/poster17.png",
     display: { right: "-42%" },
     numb1_sec2: "620",
-    para1_sec2:"The McLaren GT is a high-performance grand tourer that combines speed, style, and balance, delivering a thrilling yet comfortable driving experience for long journeys.",
+    para1_sec2: "A grand tourer that balances speed and comfort.",
     numb2_sec2: "330",
-    para2_sec2:"Top speed performance ensures a consistently thrilling and smooth driving experience, combining speed with luxury.",
+    para2_sec2: "Impressive top speed with refined stability.",
     numb3_sec2: "680+",
-    para3_sec2:"Torque provides fast, reliable acceleration, making high-speed driving both exciting and controlled."
+    para3_sec2: "Strong torque for fast, smooth acceleration.",
+    para_sec3: "The McLaren GT is designed for long-distance driving without sacrificing supercar performance. It combines powerful acceleration, refined handling, and a luxurious interior to deliver comfort on extended journeys. With its aerodynamic efficiency, advanced suspension, and elegant design, it offers a unique balance between everyday usability and thrilling performance.",
+    highlights_sec3: [
+      "Supercar-level performance",
+      "Comfort-focused grand touring setup",
+      "Elegant aerodynamic design",
+      "Powerful twin-turbo engine"
+    ]
+             ,
+    poster2: "models/poster26.png",
   },
+
   {
     id: "nissan-gtr",
     name: "Nissan GT-R",
@@ -136,10 +214,19 @@ localStorage.setItem("products", JSON.stringify([
     poster: "models/poster18.png",
     display: { right: "-42%" },
     numb1_sec2: "565",
-    para1_sec2:"The legendary Nissan GT-R delivers aggressive acceleration and unmatched performance, combining precision engineering with exhilarating driving dynamics.",
+    para1_sec2: "Legendary performance with aggressive acceleration.",
     numb2_sec2: "315",
-    para2_sec2:"Achieves incredible top speed while maintaining precise control, delivering a high-performance driving experience every time.",
+    para2_sec2: "High top speed with precise control.",
     numb3_sec2: "620+",
-    para3_sec2:"Torque allows lightning-fast acceleration, ensuring the car responds immediately and confidently to every input."
+    para3_sec2: "Lightning-fast torque response.",
+    para_sec3: "The Nissan GT-R is engineered for drivers who demand extreme performance and control. Its advanced all-wheel-drive system, precise handling, and powerful twin-turbo engine deliver relentless acceleration and confidence at high speeds. Combining track-inspired technology with everyday usability, the GT-R remains a benchmark in high-performance sports cars.",
+    highlights_sec3: [
+      "Advanced all-wheel-drive system",
+      "Iconic aggressive styling",
+      "Track-focused engineering",
+      "High-performance twin-turbo V6"
+    ]
+       ,
+    poster2: "models/poster27.png",
   }
 ]));
