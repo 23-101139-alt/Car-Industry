@@ -49,6 +49,15 @@ gsap.utils.toArray(".containermodel-sec1-p2").forEach(card => {
 
 
 
+
+
+
+
+
+
+
+
+
 // sec1
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -181,8 +190,68 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
+
+// animationsec2
+
+
+
+  gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".numbers-sec2-p2").forEach(el => {
+  const rawText = el.textContent.trim();
+
+  const endValue = parseInt(rawText.replace(/\D/g, ""), 10);
+
+  const hasPlus = rawText.includes("+");
+
+  const counter = { value: 0 };
+
+  ScrollTrigger.create({
+    trigger: el,
+    start: "top 85%",
+
+    onEnter: () => {
+      counter.value = 0;
+
+      gsap.to(counter, {
+        value: endValue,
+        duration: 1.6,
+        ease: "power2.out",
+        onUpdate: () => {
+          el.textContent =
+            Math.floor(counter.value) + (hasPlus ? "+" : "");
+        }
+      });
+    },
+
+    onEnterBack: () => {
+      counter.value = 0;
+
+      gsap.to(counter, {
+        value: endValue,
+        duration: 1.6,
+        ease: "power2.out",
+        onUpdate: () => {
+          el.textContent =
+            Math.floor(counter.value) + (hasPlus ? "+" : "");
+        }
+      });
+    }
+  });
+});
+
   
-  
+
+
+
+
+
+
+
+
+
+
+
 });
 
 
