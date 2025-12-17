@@ -72,6 +72,18 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("price").innerHTML = product.price;
   document.getElementById("cta-text").innerHTML = "Book Now";
 
+ 
+  
+  document.getElementById("numb-1-sec2").innerHTML = product.numb1_sec2 || "-";
+  document.getElementById("para-1-sec2").innerHTML = product.para1_sec2 || "-";
+  document.getElementById("numb-2-sec2").innerHTML = product.numb2_sec2 || "-";
+  document.getElementById("para-2-sec2").innerHTML = product.para2_sec2 || "-";
+  document.getElementById("numb-3-sec2").innerHTML = product.numb3_sec2 || "-";
+  document.getElementById("para-3-sec2").innerHTML = product.para3_sec2 || "-";
+
+
+
+
 
   // MODEL VIEWER SETUP
   const modelViewer = document.querySelector(".model-one-p2");
@@ -167,9 +179,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const nums = color.match(/\d+/g).map(Number);
     return [nums[0]/255, nums[1]/255, nums[2]/255, 1];
   }
+
+
+  
+  
 });
-
-
 
 
 

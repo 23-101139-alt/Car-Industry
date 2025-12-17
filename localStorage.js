@@ -1,5 +1,3 @@
-// localStorage.js
-
 localStorage.setItem("products", JSON.stringify([
   {
     id: "byd-seal-u",
@@ -8,7 +6,13 @@ localStorage.setItem("products", JSON.stringify([
     category: "Plug-in Hybrid SUV",
     price: "2,650,000 EGP",
     model: "models/2024_byd_seal_u_dm-i.glb",
-    poster: "models/poster10-page2.png"
+    poster: "models/poster10-page2.png",
+    numb1_sec2:"300+",
+    para1_sec2:"This hybrid SUV delivers impressive horsepower, providing smooth, responsive, and highly efficient performance for both city and highway driving.",
+    numb2_sec2:"70+",
+    para2_sec2:"Provides an impressive number of kilometers of pure electric driving, making daily fuel-free commutes highly efficient and environmentally friendly.",
+    numb3_sec2:"500+",
+    para3_sec2:"Generates strong Newton-meters of torque, giving exceptionally responsive acceleration and powerful performance at any speed."
   },
   {
     id: "byd-u9",
@@ -18,30 +22,30 @@ localStorage.setItem("products", JSON.stringify([
     price: "4,504,000 EGP",
     model: "models/2024_byd_yangwang_u9.glb",
     poster: "models/poster11.png",
-              display: {
-         top: "2%",                
-    height: "107%" 
-  }
+    display: { top: "2%", height: "107%" },
+    numb1_sec2: "750+",
+    para1_sec2:"This electric supercar offers extreme acceleration with precise handling, giving drivers an exhilarating experience and unmatched control at every turn.",
+    numb2_sec2: "120+",
+    para2_sec2:"Reaches top speeds with perfect control, delivering an exhilarating driving experience for enthusiasts who love high-performance vehicles.",
+    numb3_sec2: "900+",
+    para3_sec2:"Delivers immense torque for ultra-responsive and thrilling acceleration, giving a true sense of speed and power on every drive."
   },
-{
+  {
     id: "byd-seal-u2",
-  name: "BYD Seal",
-  year: "2024",
-  category: "Plug-in Hybrid SUV",
-  price: "2,650,000 EGP",
-  model: "models/2024_byd_seal.glb",
-  poster: "models/poster12.png",
-  display: {
-    cameraOrbit: "35deg 70deg 0.15m",  
-    fieldOfView: "48deg"   ,  
-     "camera-target": "0m 0.4m 0m",
-       right: "-45%",  
-       top: "9%",                
-    height: "90%" 
-  }
-},
-
-
+    name: "BYD Seal",
+    year: "2024",
+    category: "Plug-in Hybrid SUV",
+    price: "2,650,000 EGP",
+    model: "models/2024_byd_seal.glb",
+    poster: "models/poster12.png",
+    display: { cameraOrbit: "35deg 70deg 0.15m", fieldOfView: "48deg", "camera-target": "0m 0.4m 0m", right: "-45%", top: "9%", height: "90%" },
+    numb1_sec2: "350+",
+    para1_sec2:"This hybrid SUV combines efficiency and comfort, delivering a smooth ride while offering advanced hybrid technology for everyday practicality.",
+    numb2_sec2: "80+",
+    para2_sec2:"Offers a significant electric driving range, perfect for daily commutes without using fuel, while ensuring smooth and quiet operation.",
+    numb3_sec2: "450+",
+    para3_sec2:"Provides smooth torque delivery, ensuring confident and responsive acceleration in all driving conditions."
+  },
   {
     id: "audi-r8",
     name: "Audi R8 Coupe",
@@ -50,11 +54,13 @@ localStorage.setItem("products", JSON.stringify([
     price: "3,200,000 EGP",
     model: "models/2019_audi_r8_coupe.glb",
     poster: "models/poster13.png",
-          display: {
-    fieldOfView: "20deg"   ,  
-         top: "-10%",                
-    height: "123%" 
-  }
+    display: { fieldOfView: "20deg", top: "-10%", height: "123%" },
+    numb1_sec2: "562",
+    para1_sec2:"The iconic Audi R8 Coupe is powered by a V10 engine, delivering thrilling sports performance with a perfect balance of speed, agility, and driving pleasure.",
+    numb2_sec2: "315",
+    para2_sec2:"Achieves an impressive top speed, providing exhilarating performance and high-speed stability, perfect for both road and track driving.",
+    numb3_sec2: "540+",
+    para3_sec2:"Offers powerful torque to deliver quick, precise acceleration, making every drive feel thrilling and controlled."
   },
   {
     id: "bmw-m850",
@@ -64,13 +70,15 @@ localStorage.setItem("products", JSON.stringify([
     price: "3,800,000 EGP",
     model: "models/2020_bmw_m850i_gran_coupe.glb",
     poster: "models/poster14.png",
-              display: {
-             
-    right: "-43%" 
-  }
+    display: { right: "-43%" },
+    numb1_sec2: "523",
+    para1_sec2:"The BMW M850i Gran Coupe is a luxurious performance coupe, blending cutting-edge technology with powerful performance for a refined and dynamic driving experience.",
+    numb2_sec2: "310",
+    para2_sec2:"Offers high top speed while maintaining smooth and refined performance, combining luxury with sporty excitement for the driver.",
+    numb3_sec2: "500+",
+    para3_sec2:"Torque is finely tuned to provide effortless acceleration, allowing confident and dynamic driving in any condition."
   },
-
-{
+  {
     id: "lotus-emira",
     name: "Lotus Emira V6",
     year: "2022",
@@ -78,15 +86,14 @@ localStorage.setItem("products", JSON.stringify([
     price: "3,500,000 EGP",
     model: "models/2022_lotus_emira_v6.glb",
     poster: "models/poster15.png",
-                display: {
-             
-    height: "112%" ,
-      top: "-2%" ,
-  }
-  
+    display: { height: "112%", top: "-2%" },
+    numb1_sec2: "400",
+    para1_sec2:"The Lotus Emira V6 is a lightweight sports car offering excellent handling, agility, and a thrilling driving experience for enthusiasts seeking performance and precision.",
+    numb2_sec2: "290",
+    para2_sec2:"Reaches a strong top speed while remaining stable and agile, giving the driver a responsive and thrilling ride.",
+    numb3_sec2: "420+",
+    para3_sec2:"Torque is optimized for instant acceleration, allowing precise and powerful control during every driving maneuver."
   },
-    
-
   {
     id: "yangwang-u7",
     name: "BYD Yangwang U7",
@@ -95,10 +102,13 @@ localStorage.setItem("products", JSON.stringify([
     price: "4,200,000 EGP",
     model: "models/2024_byd_yangwang_u7.glb",
     poster: "models/poster16.png",
-  display: {
-    fieldOfView: "20deg",
-    right: "-42%" 
-  }
+    display: { fieldOfView: "20deg", right: "-42%" },
+    numb1_sec2: "600+",
+    para1_sec2:"This luxury electric sedan provides a smooth ride with advanced features, combining comfort, performance, and cutting-edge technology in one elegant package.",
+    numb2_sec2: "150+",
+    para2_sec2:"Provides a long-range electric drive, perfect for efficient and comfortable travel while maintaining luxurious ride quality.",
+    numb3_sec2: "700+",
+    para3_sec2:"Torque delivers effortless power, enabling smooth and confident acceleration for a refined driving experience."
   },
   {
     id: "mclaren-gt",
@@ -108,10 +118,13 @@ localStorage.setItem("products", JSON.stringify([
     price: "5,100,000 EGP",
     model: "models/2020_mclaren_gt (1).glb",
     poster: "models/poster17.png",
-      display: {
-    right: "-42%" 
-  }
-        
+    display: { right: "-42%" },
+    numb1_sec2: "620",
+    para1_sec2:"The McLaren GT is a high-performance grand tourer that combines speed, style, and balance, delivering a thrilling yet comfortable driving experience for long journeys.",
+    numb2_sec2: "330",
+    para2_sec2:"Top speed performance ensures a consistently thrilling and smooth driving experience, combining speed with luxury.",
+    numb3_sec2: "680+",
+    para3_sec2:"Torque provides fast, reliable acceleration, making high-speed driving both exciting and controlled."
   },
   {
     id: "nissan-gtr",
@@ -121,20 +134,12 @@ localStorage.setItem("products", JSON.stringify([
     price: "3,900,000 EGP",
     model: "models/2017_nissan_gt-r_nismo.glb",
     poster: "models/poster18.png",
-     display: { 
-             right: "-42%"  }
-
+    display: { right: "-42%" },
+    numb1_sec2: "565",
+    para1_sec2:"The legendary Nissan GT-R delivers aggressive acceleration and unmatched performance, combining precision engineering with exhilarating driving dynamics.",
+    numb2_sec2: "315",
+    para2_sec2:"Achieves incredible top speed while maintaining precise control, delivering a high-performance driving experience every time.",
+    numb3_sec2: "620+",
+    para3_sec2:"Torque allows lightning-fast acceleration, ensuring the car responds immediately and confidently to every input."
   }
-
-
-
-
-
-
-
-
-
-
-
 ]));
-
