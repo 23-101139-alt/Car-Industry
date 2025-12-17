@@ -17,7 +17,7 @@ localStorage.setItem("products", JSON.stringify([
     category: "Electric Supercar",
     price: "4,504,000 EGP",
     model: "models/2024_byd_yangwang_u9.glb",
-    poster: "models/poster2.png"
+    poster: "models/poster11.png"
   },
 {
     id: "byd-seal-u2",
@@ -26,7 +26,7 @@ localStorage.setItem("products", JSON.stringify([
   category: "Plug-in Hybrid SUV",
   price: "2,650,000 EGP",
   model: "models/2024_byd_seal.glb",
-  poster: "models/poster10-page2.png",
+  poster: "models/poster12.png",
   display: {
     cameraOrbit: "35deg 70deg 0.15m",  
     fieldOfView: "48deg"   ,  
@@ -45,7 +45,7 @@ localStorage.setItem("products", JSON.stringify([
     category: "Sports Car",
     price: "3,200,000 EGP",
     model: "models/2019_audi_r8_coupe.glb",
-    poster: "models/poster4.png"
+    poster: "models/poster13.png"
   },
   {
     id: "bmw-m850",
@@ -54,7 +54,7 @@ localStorage.setItem("products", JSON.stringify([
     category: "Luxury Coupe",
     price: "3,800,000 EGP",
     model: "models/2020_bmw_m850i_gran_coupe.glb",
-    poster: "models/poster5.png"
+    poster: "models/poster14.png"
   },
 
 {
@@ -64,7 +64,7 @@ localStorage.setItem("products", JSON.stringify([
     category: "Sports Car",
     price: "3,500,000 EGP",
     model: "models/2022_lotus_emira_v6.glb",
-    poster: "models/poster6.png",},
+    poster: "models/poster15.png",},
 
   {
     id: "yangwang-u7",
@@ -73,7 +73,11 @@ localStorage.setItem("products", JSON.stringify([
     category: "Electric Luxury Sedan",
     price: "4,200,000 EGP",
     model: "models/2024_byd_yangwang_u7.glb",
-    poster: "models/poster7.png"
+    poster: "models/poster16.png",
+      display: {
+    fieldOfView: "20deg"   ,  
+
+  }
   },
   {
     id: "mclaren-gt",
@@ -82,7 +86,7 @@ localStorage.setItem("products", JSON.stringify([
     category: "Luxury Sports Car",
     price: "5,100,000 EGP",
     model: "models/2020_mclaren_gt (1).glb",
-    poster: "models/poster8.png"
+    poster: "models/poster17.png"
   },
   {
     id: "nissan-gtr",
@@ -90,16 +94,9 @@ localStorage.setItem("products", JSON.stringify([
     year: "2021",
     category: "Performance Sports Car",
     price: "3,900,000 EGP",
-    model: "models/nissan_gt-r.glb",
-    poster: "models/poster9.png",
-      display: {
-    cameraOrbit: "35deg 70deg 0.15m",  
-    fieldOfView: "48deg"   ,  
-     "camera-target": "0m 0.4m 0m",
-       right: "-52%",  
-       top: "25%",                
-    height: "90%" 
-  }
+    model: "models/2017_nissan_gt-r_nismo.glb",
+    poster: "models/poster18.png",
+
   }
 
 
