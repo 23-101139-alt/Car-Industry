@@ -64,9 +64,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let product = JSON.parse(localStorage.getItem("selectedProduct"));
   if (!product) {
-    alert("No product selected!");
-    window.location.href = "index.html";
-    return;
+    const products = JSON.parse(localStorage.getItem("products")) || [];
+
+    if (products.length > 0) {
+      product = products[0];              
+      localStorage.setItem(
+        "selectedProduct",
+        JSON.stringify(product)
+      );
+    } else {
+      console.error("No products found in localStorage");
+      return;
+    }
   }
 
   // PAGE TEXT CONTENT
