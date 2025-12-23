@@ -487,7 +487,8 @@ border-radius: 32px;
     background-image: var(--gradient1);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;}
+    background-position: center;
+transition: all 300ms linear;}
 
 .main-card-sec2:hover{
 box-shadow: -2px 4px 30.4px 0 #C6DE41;
@@ -2134,6 +2135,12 @@ gap: 20px;}
     background: var(--gradient-2);
     border-radius: 25px;
     border: 2px solid var(--border-color);
+    transition: all 300ms linear;
+}
+
+
+.card1-sec4-p2:hover{
+box-shadow: -2px 4px 30.4px 0 #C6DE41;
 }
 
 
@@ -2189,7 +2196,14 @@ height: fit-content;
 display: flex;
 flex-direction: row;gap: 23px;
 padding: 50px 36px;    justify-content: space-between;
+    transition: all 300ms linear;
 }
+
+
+.card-2-sec4-p2:hover{
+box-shadow: -2px 4px 30.4px 0 #C6DE41;
+}
+
 
 .text-container-card2-sec4-p2{display: flex;
 flex-direction: column;    align-items: flex-start;

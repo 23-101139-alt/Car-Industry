@@ -308,6 +308,111 @@ gsap.utils.toArray(".numbers-sec2-p2").forEach(el => {
 });
 
   
+// animationsec3
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".container-model-sec3-p2").forEach(container => {
+  ScrollTrigger.create({
+    trigger: container,
+    start: "top 85%",
+    toggleActions: "restart none restart none",
+
+    onEnter: () =>
+      gsap.fromTo(
+        container,
+        { opacity: 0, x: 300 },  
+        { opacity: 1, x: 0, duration: 1, ease: "power2.out" }  
+      ),
+
+    onEnterBack: () =>
+      gsap.fromTo(
+        container,
+        { opacity: 0, x: 300 },  
+        { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+      )
+  });
+});
+
+
+
+// animationsec4
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".card1-sec4-p2").forEach(card => {
+  ScrollTrigger.create({
+    trigger: card,
+    start: "top 85%",
+    toggleActions: "restart none restart none",
+
+    onEnter: () =>
+      gsap.fromTo(
+        card,
+        { opacity: 0, y: 400 }, 
+        { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" } 
+      ),
+
+    onEnterBack: () =>
+      gsap.fromTo(
+        card,
+        { opacity: 0, y: 400 },  
+        { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }
+      )
+  });
+});
+
+
+
+
+gsap.utils.toArray(".card-2-sec4-p2").forEach(card => {
+  ScrollTrigger.create({
+    trigger: card,
+    start: "top 85%",
+    toggleActions: "restart none restart none",
+
+    onEnter: () =>
+      gsap.fromTo(
+        card,
+        { opacity: 0, y: 400 }, 
+        { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" } 
+      ),
+
+    onEnterBack: () =>
+      gsap.fromTo(
+        card,
+        { opacity: 0, y: 400 },  
+        { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }
+      )
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
