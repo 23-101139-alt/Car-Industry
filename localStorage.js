@@ -21,6 +21,33 @@ localStorage.setItem("products", JSON.stringify([
       "Advanced safety and driver assistance"
     ],
     poster2: "models/poster19.png",
+    
+    specs_sec4: {
+      spec1: {
+        img: "pic/pic45.png",
+        title: "1.5 L <br> Petrol",
+        desc: "A smooth hybrid engine designed for efficient and reliable daily driving."
+      },
+      spec2: {
+        img: "pic/pic46.png",
+        title: "18.3 kWh",
+        img2: "pic/pic46.png",
+        title2: "18.3 kWh",
+        desc: "Provides efficient electric driving for short urban trips."
+      },
+      spec3: {
+        img: "pic/pic47.png",
+        title: "180 <br> km/h",
+        img2: "pic/pic47.png",
+        title2: "180 <br> km/h",
+        desc: "Stable top speed suitable for highway and long-distance travel."
+      }
+    }
+
+
+
+
+
   },
 
   {
@@ -46,6 +73,32 @@ localStorage.setItem("products", JSON.stringify([
       "Track-focused driving dynamics"
     ],
     poster2: "models/poster20.png",
+
+
+specs_sec4: {
+  spec1: {
+    img: "pic/pic48.png",
+    title: "1.8L <br> Petrol",
+    desc: "Extreme electric power delivering supercar-level acceleration."
+  },
+  spec2: {
+    img: "pic/pic49.png",
+    title: "20.4 kWh",
+    img2: "pic/pic49.png",
+    title2: "20.4 kWh",
+    desc: "High-capacity battery built for performance and endurance."
+  },
+  spec3: {
+    img: "pic/pic50.png",
+    title: "230 <br> km/h",
+    img2: "pic/pic50.png",
+    title2: "230 <br> km/h",
+    desc: "Engineered for ultra-high-speed track performance."
+  }
+}
+
+
+
   },
 
   {
@@ -72,6 +125,29 @@ localStorage.setItem("products", JSON.stringify([
     ],
     display2: { cameraOrbit: "90deg 90deg 0.1m", fieldOfView: "30deg", top: "-9%", right: "-47%" },
     poster2: "models/poster21.png",
+
+specs_sec4: {
+  spec1: {
+    img: "pic/pic51.png",
+    title: "1.4L <br> Petrol",
+    desc: "Balanced power output for smooth, responsive, and reliable driving."
+  },
+  spec2: {
+    img: "pic/pic52.png",
+    title: "15.6 kWh",
+        img2: "pic/pic52.png",
+    title2: "15.6 kWh",
+    desc: "Long-range battery optimized for efficiency."
+  },
+  spec3: {
+    img: "pic/pic47.png",
+    title: "180 <br> km/h",
+    img2: "pic/pic47.png",
+    title2: "180 <br> km/h",
+    desc: "Comfortable and confident cruising at higher speeds."
+  }
+}
+
   },
 
   {
@@ -98,6 +174,29 @@ localStorage.setItem("products", JSON.stringify([
     ]
     ,
     poster2: "models/poster22.png",
+specs_sec4: {
+  spec1: {
+    img: "pic/pic53.png",
+    title: "2.7 L <br> Petrol",
+    desc: "Naturally aspirated V10 delivering iconic supercar sound and power."
+  },
+  spec2: {
+    img: "pic/pic54.png",
+    title: "19.6 kWh",
+    img2: "pic/pic54.png",
+    title2: "19.6 kWh",
+    desc: "High-revving performance engine with instant throttle response."
+  },
+  spec3: {
+    img: "pic/pic55.png",
+    title: "200 <br> km/h",
+    img2: "pic/pic55.png",
+    title2: "200 <br> km/h",
+    desc: "Built for extreme speed with quattro stability."
+  }
+}
+
+
   },
 
   {
@@ -124,6 +223,32 @@ localStorage.setItem("products", JSON.stringify([
     ]
         ,
     poster2: "models/poster23.png",
+
+specs_sec4: {
+  spec1: {
+    img: "pic/pic56.png",
+    title: "3.9 L <br> Petrol",
+    desc: "Twin-turbo V8 combining luxury with aggressive performance."
+  },
+  spec2: {
+    img: "pic/pic57.png",
+    title: "14.3 kWh",
+        img2: "pic/pic57.png",
+    title2: "14.3 kWh",
+    desc: "Effortless power delivery for smooth high-speed driving."
+  },
+  spec3: {
+    img: "pic/pic58.png",
+    title: "150 <br> km/h",
+        img2: "pic/pic58.png",
+    title2: "150 <br> km/h",
+    desc: "Electronically limited for controlled luxury performance."
+  }
+}
+
+
+
+
   },
 
   {
@@ -150,6 +275,31 @@ localStorage.setItem("products", JSON.stringify([
     ]
        ,
     poster2: "models/poster24.png",
+
+specs_sec4: {
+  spec1: {
+    img: "pic/pic59.png",
+    title: "3.5 L <br> Petrol",
+    desc: "Lightweight performance engine focused on driving purity and precision."
+  },
+  spec2: {
+    img: "pic/pic49.png",
+    title: "20.4 kWh",
+        img2: "pic/pic49.png",
+    title2: "20.4 kWh",
+    desc: "Perfect balance of power and handling precision."
+  },
+  spec3: {
+    img: "pic/pic60.png",
+    title: "163 <br> km/h",
+        img2: "pic/pic60.png",
+    title2: "163 <br> km/h",
+    desc: "Track-inspired speed with exceptional control."
+  }
+}
+
+
+
   },
 
   {
@@ -176,6 +326,32 @@ localStorage.setItem("products", JSON.stringify([
     ]
          ,
     poster2: "models/poster25.png",
+specs_sec4: {
+  spec1: {
+    img: "pic/pic61.png",
+    title: "2.9 L <br> Petrol",
+    desc: "Advanced dual-motor system for smooth luxury performance."
+  },
+  spec2: {
+    img: "pic/pic62.png",
+    title: "12.4 kWh",
+        img2: "pic/pic62.png",
+    title2: "12.4 kWh",
+    desc: "High-capacity battery for long-range electric driving."
+  },
+  spec3: {
+    img: "pic/pic63.png",
+    title: "314 <br> km/h",
+     img2: "pic/pic63.png",
+    title2: "314 <br> km/h",
+    desc: "High-speed stability designed for premium electric travel."
+  }
+}
+
+
+
+
+
   },
 
   {
@@ -202,6 +378,31 @@ localStorage.setItem("products", JSON.stringify([
     ]
              ,
     poster2: "models/poster26.png",
+specs_sec4: {
+  spec1: {
+    img: "pic/pic64.png",
+    title: "2.3 L <br> Petrol",
+    desc: "Twin-turbo engine combining supercar speed with comfort."
+  },
+  spec2: {
+    img: "pic/pic65.png",
+    title: "14.7 kWh",
+        img2: "pic/pic65.png",
+    title2: "14.7 kWh",
+    desc: "Refined power delivery ideal for long-distance touring."
+  },
+  spec3: {
+    img: "pic/pic47.png",
+    title: "100 <br> km/h",
+        img2: "pic/pic47.png",
+    title2: "100 <br> km/h",
+    desc: "Exceptional top speed with aerodynamic efficiency."
+  }
+}
+
+
+
+
   },
 
   {
@@ -228,5 +429,34 @@ localStorage.setItem("products", JSON.stringify([
     ]
        ,
     poster2: "models/poster27.png",
+specs_sec4: {
+  spec1: {
+    img: "pic/pic67.png",
+    title: "3.7 L <br> Petrol",
+    desc: "Hand-built twin-turbo engine with legendary performance and power."
+  },
+  spec2: {
+    img: "pic/pic68.png",
+    title: "16.2 kWh",
+        img2: "pic/pic68.png",
+    title2: "16.2 kWh",
+    desc: "Instant torque response for aggressive acceleration."
+  },
+  spec3: {
+    img: "pic/pic47.png",
+    title: "169 <br> km/h",
+        img2: "pic/pic47.png",
+    title2: "169 <br> km/h",
+    desc: "High-speed dominance with advanced AWD control."
+  }
+}
+
+
+
+
+
+
+
+
   }
 ]));

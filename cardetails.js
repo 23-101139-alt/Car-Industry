@@ -142,7 +142,24 @@ if (product.display2) {
   if (product.display2.height) modelViewerr.style.height = product.display2.height;
 }
 
+// sec4
+if (product.specs_sec4) {
+  document.getElementById("spec1-img").src = product.specs_sec4.spec1.img;
+  document.getElementById("spec1-title").innerHTML = product.specs_sec4.spec1.title;
+  document.getElementById("spec1-desc").innerHTML = product.specs_sec4.spec1.desc;
 
+  document.getElementById("spec2-img").src = product.specs_sec4.spec2.img;
+  document.getElementById("spec2-title").innerHTML = product.specs_sec4.spec2.title;
+  document.getElementById("spec2-desc").innerHTML = product.specs_sec4.spec2.desc;
+    document.getElementById("spec2-img2").src = product.specs_sec4.spec2.img2;
+  document.getElementById("spec2-title2").innerHTML = product.specs_sec4.spec2.title2;
+
+  document.getElementById("spec3-img").src = product.specs_sec4.spec3.img;
+  document.getElementById("spec3-title").innerHTML = product.specs_sec4.spec3.title;
+  document.getElementById("spec3-desc").innerHTML = product.specs_sec4.spec3.desc;
+    document.getElementById("spec3-img2").src = product.specs_sec4.spec3.img2;
+  document.getElementById("spec3-title2").innerHTML = product.specs_sec4.spec3.title2;
+}
 
   // MODEL VIEWER SETUP
   const modelViewer = document.querySelector(".model-one-p2");
