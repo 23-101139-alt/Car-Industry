@@ -105,6 +105,14 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("para-sec3").innerHTML = product.para_sec3 || "-";
   document.getElementById("subheader-sec3").innerHTML = "Best Highlights:";
 
+
+document.getElementById("header-sec4").innerHTML = "Car Specifications";
+document.getElementById("subhedaer1-sec4").innerHTML = "Engine Power";
+document.getElementById("subhedaer2-sec4").innerHTML = "Kwh Rating ";
+document.getElementById("subhedaer3-sec4").innerHTML = "Top Speed";
+
+
+
 const container = document.getElementById("highlightsContainer");
 
 container.innerHTML = ""; 

@@ -2087,6 +2087,201 @@ width: 159%;
 
 
 
+
+.sec4-p2{width: 100%;height: fit-content;}
+
+
+.main-info-sec4-p2 {
+    width: 100%;
+    height: 100%;
+    padding: 125px 7.9% 93px 7.9%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.container2-sec4-p2 {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;flex-direction: column;
+    gap: 92px;
+    justify-content: center;
+}
+
+
+.header-sec4-p2{
+    color: var(--white);
+text-align: center;
+font-family: Syncopate;
+font-size: 40px;
+font-weight: 700;
+line-height: 120%; /* 48px */
+}
+
+.row-sec4-p2{width: 100%;
+display: flex;
+flex-direction: row; flex-wrap: wrap; 
+gap: 20px;}
+
+
+
+.card1-sec4-p2{
+ height: fit-content;
+    padding: 60px 63px 45px ;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background: var(--gradient-2);
+    border-radius: 25px;
+    border: 2px solid var(--border-color);
+}
+
+
+.part1-card1-sec4-p2{display: flex;
+flex-direction: column;}
+
+.subhedaers-sec4-p2{
+    color: var(--white);
+text-align: center;
+font-family: Syncopate;
+font-size: 24px;
+font-weight: 700;
+}
+
+
+.subhedaers-card2-sec4-p2{
+    color: var(--white);
+font-family: Syncopate;
+font-size: 24px;
+font-weight: 700;
+}
+
+.container-img-card1-sec4-p2{position: relative;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+.img-title-card1-sec4-p2{position: absolute;
+bottom: 0;
+color: var(--cta);
+text-align: center;
+font-family: Inter;
+font-size: 32.754px;
+font-weight: 600;}
+
+
+.para-card1-sec4-p3{color: var(--fadedwhite);
+text-align: center;
+font-family: Inter;line-height: 140%;
+font-size: 18px;
+font-weight: 500;}
+
+.container-part2-sec4-p2{gap: 20px;
+display: flex;
+flex-direction: column;}
+
+
+.card-2-sec4-p2{width: 100%;
+height: fit-content;
+    background: var(--gradient-2);
+    border-radius: 25px;
+    border: 2px solid var(--border-color);
+display: flex;
+flex-direction: row;gap: 23px;
+padding: 50px 36px;    justify-content: space-between;
+}
+
+.text-container-card2-sec4-p2{display: flex;
+flex-direction: column;    align-items: flex-start;
+gap: 26px;}
+
+
+.para-card2-sec4-p2{
+color: var(--fadedwhite);
+font-family: Inter;
+font-size: 18px;
+font-weight: 500;
+display: -webkit-box;
+    display: box;
+    display: flexbox;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;}
+
+
+.img-container-card2-sec4-p2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.img-container-card2-sec4-p2-hidden{
+    display: flex;display: none;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+
+
+.img-title-card2-sec4-p2{
+    color: var(--cta);
+text-align: center;
+font-family: Inter;
+font-size: 32.754px;
+font-weight: 600;
+}
+
+.img-container-card3-sec4-p2{
+    display: flex;position: relative;
+    justify-content: center;
+}
+.img-container-card3-sec4-p2-hidden{
+    display: flex;position: relative;
+    justify-content: center;display: none;
+}
+
+
+.img-title-card3-sec4-p2{
+    color: var(--cta);
+text-align: center;
+font-family: Inter;position: absolute;bottom: 0;
+font-size: 32.754px;
+font-weight: 600;
+}
+
+
+
+.card1-sec4-p2,
+.container-part2-sec4-p2 {
+  flex: 1 1 500px;
+}
+
+.contaner-pargraph-and_charts_cards_sec4_p2{
+    display: flex;flex-direction: column;
+    gap: 27px;    align-items: center;
+}
+
+
+.img-card1-sec4-p2{display: block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Mobile screen */
 @media(max-width: 501px) {
 .burger-menu-cont{
@@ -2864,6 +3059,90 @@ background-image: url(pic/pic44.png);}
 
 
 
+.main-info-sec4-p2 {
+    width: 100%;
+    height: 100%;
+    padding: 100px 20px 93px 20px;}
+
+.container2-sec4-p2 {
+
+    gap: 68px;}
+
+.row-sec4-p2 {
+    gap: 30px;
+}
+
+.container-part2-sec4-p2 {
+    gap: 30px;
+}
+
+.img-container-card2-sec4-p2-hidden {
+
+    display: flex;
+        width: 242.35px;
+    }
+
+.img-container-card2-sec4-p2 {
+    display: none;}
+
+.text-container-card2-sec4-p2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+}
+
+.img-container-card3-sec4-p2-hidden {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+
+.img-container-card3-sec4-p2 {
+    display: none;
+    position: relative;
+    justify-content: center;
+}
+
+.para-card2-sec4-p2{text-align: center;}
+
+.card1-sec4-p2 {
+    height: fit-content;
+    padding: 60px 36px 45px;}
+
+.header-sec4-p2 {
+    font-size: 34px;}
+
+.subhedaers-sec4-p2 {
+    font-size: 20px;}
+
+.para-card1-sec4-p3 {
+    font-size: 16px;}
+
+.subhedaers-card2-sec4-p2 {
+    font-size: 20px;}
+
+.para-card2-sec4-p2 {
+    font-size: 16px;}
+
+.img-title-card1-sec4-p2 {
+    font-size: 30px;
+}
+
+.img-title-card2-sec4-p2 {
+    font-size: 30px;}
+.img-title-card3-sec4-p2 {
+    font-size: 30px;}
+.img-card1-sec4-p2 {
+    display: block;
+    width: 85%;
+}
+.card1-sec4-p2, .container-part2-sec4-p2 {
+    flex: 1 1 500px;
+    width: 100%;
+}
 
 }
 
@@ -3400,13 +3679,63 @@ background-image: url(pic/pic43.png);}
 
 
 
+.main-info-sec4-p2 {
+    width: 100%;
+    height: 100%;
+    padding: 125px 7.3% 93px 7.3%;}
 
+.container2-sec4-p2 {
 
+    gap: 74px;}
 
+.row-sec4-p2 {
+    gap: 38px;
+}
 
+.container-part2-sec4-p2 {
+    gap: 38px;
+}
 
+.img-container-card2-sec4-p2-hidden {
 
+    display: flex;
+        width: 242.35px;
+    }
 
+.img-container-card2-sec4-p2 {
+    display: none;}
+
+.text-container-card2-sec4-p2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+}
+
+.img-container-card3-sec4-p2-hidden {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+
+.img-container-card3-sec4-p2 {
+    display: none;
+    position: relative;
+    justify-content: center;
+}
+
+.para-card2-sec4-p2{text-align: center;}
+
+.card1-sec4-p2 {
+    height: fit-content;
+    padding: 60px 36px 45px;}
+
+.header-sec4-p2 {
+font-size: clamp(36px, 7vw, 40px);}
+
+.header-sec3-p2{font-size: clamp(36px, 7vw, 40px);}
 
 }
 
