@@ -183,6 +183,25 @@ if (product.specs_sec4) {
   document.getElementById("spec3-title2").innerHTML = product.specs_sec4.spec3.title2;
 }
 
+
+// sec5
+if (product.similarModels) {
+  const imgs = document.querySelectorAll(".row2-sec5-p2 .imgs-sec5-p2");
+  const subtitles = document.querySelectorAll(".subtitles-sec5-p2");
+  const models = document.querySelectorAll(".model-sec5-p2");
+
+  product.similarModels.forEach((item, index) => {
+    if (imgs[index]) imgs[index].src = item.img;
+    if (subtitles[index]) subtitles[index].innerHTML = item.subtitle;
+    if (models[index]) models[index].innerHTML = item.model;
+  });
+}
+
+
+
+
+
+
   // MODEL VIEWER SETUP
   const modelViewer = document.querySelector(".model-one-p2");
   modelViewer.src = product.model;

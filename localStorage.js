@@ -42,7 +42,12 @@ localStorage.setItem("products", JSON.stringify([
         title2: "180 <br> km/h",
         desc: "Stable top speed suitable for highway and long-distance travel."
       }
-    }
+    },
+      similarModels: [
+    { img: "pic/pic71.png", subtitle: "BYD_Seal_GT", model: "Seal 06 GT" },
+    { img: "pic/pic73.png", subtitle: "BYD_Sealio", model: "Sealion_7" },
+    { img: "pic/pic74.png", subtitle: "BYD_Seal_GT", model: "Seal 06 GT" }
+  ],
 
 
 
@@ -95,7 +100,12 @@ specs_sec4: {
     title2: "230 <br> km/h",
     desc: "Engineered for ultra-high-speed track performance."
   }
-}
+},
+      similarModels: [
+    { img: "pic/pic75.png", subtitle: "Aspark", model: "Aspark_owl_2020" },
+    { img: "pic/pic76.png", subtitle: "lotus_evija", model: "2019_lotus_evija" },
+    { img: "pic/pic77.png", subtitle: "Deus_Vayanne", model: "2022_Deus_Concept" }
+  ],
 
 
 
@@ -146,7 +156,12 @@ specs_sec4: {
     title2: "180 <br> km/h",
     desc: "Comfortable and confident cruising at higher speeds."
   }
-}
+},
+      similarModels: [
+    { img: "pic/pic78.png", subtitle: "Nissan_gt-r", model: "Gt-r_nismo_r35" },
+    { img: "pic/pic79.png", subtitle: "nissan_z", model: "2023_nissan_z_gt4" },
+    { img: "pic/pic80.png", subtitle: "Nissan_gt-r", model: "Nissan_gt_r_Nismo" }
+  ],
 
   },
 
@@ -194,14 +209,19 @@ specs_sec4: {
     title2: "200 <br> km/h",
     desc: "Built for extreme speed with quattro stability."
   }
-}
+},
+      similarModels: [
+    { img: "pic/pic81.png", subtitle: "lamborghini", model: "Huracan_performante" },
+    { img: "pic/pic82.png", subtitle: "Lamborghini", model: "Huracan_LP580-2" },
+    { img: "pic/pic83.png", subtitle: "Mansory", model: "Huracan_Torofeo" }
+  ],
 
 
   },
 
   {
     id: "bmw-m850",
-    name: "BMW M850i Gran Coupe",
+    name: "BMW M850i Coupe",
     year: "2020",
     category: "Luxury Coupe",
     price: "3,800,000 EGP",
@@ -244,7 +264,12 @@ specs_sec4: {
     title2: "150 <br> km/h",
     desc: "Electronically limited for controlled luxury performance."
   }
-}
+},
+      similarModels: [
+    { img: "pic/pic84.png", subtitle: "Mercedes", model: "Benz_amg_gt4" },
+    { img: "pic/pic85.png", subtitle: "Mercedes", model: "Benz_amg_c63s" },
+    { img: "pic/pic86.png", subtitle: "Nissan_Nismo", model: "Nissan_370Z_Nismo" }
+  ],
 
 
 
@@ -296,7 +321,12 @@ specs_sec4: {
     title2: "163 <br> km/h",
     desc: "Track-inspired speed with exceptional control."
   }
-}
+},
+      similarModels: [
+    { img: "pic/pic87.png", subtitle: "Ford_mustang", model: "Ford_Mustang_RTR" },
+    { img: "pic/pic88.png", subtitle: "Ford_mustang", model: "Rtr_spec_5" },
+    { img: "pic/pic89.png", subtitle: "mclaren_artura", model: "Mclaren_artura_gt4" }
+  ],
 
 
 
@@ -346,7 +376,12 @@ specs_sec4: {
     title2: "314 <br> km/h",
     desc: "High-speed stability designed for premium electric travel."
   }
-}
+},
+      similarModels: [
+    { img: "pic/pic90.png", subtitle: "porsche_turbo", model: "Turbo_s_991.2" },
+    { img: "pic/pic91.png", subtitle: "porsche_turbo", model: "Rtr_spec_5" },
+    { img: "pic/pic92.png", subtitle: "porsche_turbo", model: "Taycan_Turbo_S" }
+  ],
 
 
 
@@ -398,7 +433,12 @@ specs_sec4: {
     title2: "100 <br> km/h",
     desc: "Exceptional top speed with aerodynamic efficiency."
   }
-}
+},
+      similarModels: [
+    { img: "pic/pic93.png", subtitle: "Maserati", model: "Mc_stradale" },
+    { img: "pic/pic94.png", subtitle: "Mclaren", model: "Mclaren_600lt" },
+    { img: "pic/pic95.png", subtitle: "Mclaren", model: "Mclaren_765lt" }
+  ],
 
 
 
@@ -449,7 +489,12 @@ specs_sec4: {
     title2: "169 <br> km/h",
     desc: "High-speed dominance with advanced AWD control."
   }
-}
+},
+      similarModels: [
+    { img: "pic/pic96.png", subtitle: "Porsche", model: "GT1_Straßenversion" },
+    { img: "pic/pic97.png", subtitle: "Audi_quattro", model: "R8_4.2_fsi" },
+    { img: "pic/pic98.png", subtitle: "Mclaren", model: "Mclaren_Gt" }
+  ],
 
 
 
