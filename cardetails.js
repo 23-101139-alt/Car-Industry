@@ -112,6 +112,28 @@ document.getElementById("subhedaer2-sec4").innerHTML = "Kwh Rating ";
 document.getElementById("subhedaer3-sec4").innerHTML = "Top Speed";
 
 
+document.getElementById("header-sec5").innerHTML = "Similar Models";
+document.getElementById("link-sec5").innerHTML = "View All";
+document.getElementById("model1-sec5").innerHTML = "Model:";
+document.getElementById("model2-sec5").innerHTML = "Model:";
+document.getElementById("model3-sec5").innerHTML = "Model:";
+document.getElementById("cta1-sec5").innerHTML = "View product ";
+document.getElementById("cta2-sec5").innerHTML = "View product ";
+document.getElementById("cta3-sec5").innerHTML = "View product ";
+
+const row = document.querySelector('.row2-sec5-p2');
+const card3 = document.querySelector('.cardd3-sec5-p2');
+
+function checkWrap() {
+  const rowTop = row.getBoundingClientRect().top;
+  const cardTop = card3.getBoundingClientRect().top;
+
+  card3.style.marginTop = cardTop > rowTop ? '-118px' : '0';
+}
+
+window.addEventListener('resize', checkWrap);
+checkWrap();
+
 
 const container = document.getElementById("highlightsContainer");
 
