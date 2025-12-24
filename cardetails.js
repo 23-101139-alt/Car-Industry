@@ -329,7 +329,7 @@ if (product.sec7_cards) {
 
 // wrapsec7
 const cardsContainer = document.querySelector('.conatiner-cards-sec7-p2');
-const cards = document.querySelectorAll('.card-sec7-p2');
+const cards = document.querySelectorAll('.card-sec7-p2,.card2-sec7-p2');
 
 function adjustImageWidth() {
   const containerWidth = cardsContainer.clientWidth;
@@ -598,8 +598,54 @@ if (product.sec6_images) {
 
 
 
+// animationsec7
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".card-sec7-p2").forEach(card => {
+  ScrollTrigger.create({
+    trigger: card,
+    start: "top 85%",
+    toggleActions: "restart none restart none",
+
+    onEnter: () =>
+      gsap.fromTo(
+        card,
+        { opacity: 0, x: -200 },
+        { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+      ),
+
+    onEnterBack: () =>
+      gsap.fromTo(
+        card,
+        { opacity: 0, x: -200 },
+        { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+      )
+  });
+});
 
 
+
+gsap.utils.toArray(".card2-sec7-p2").forEach(card => {
+  ScrollTrigger.create({
+    trigger: card,
+    start: "top 85%",
+    toggleActions: "restart none restart none",
+
+    onEnter: () =>
+      gsap.fromTo(
+        card,
+        { opacity: 0, x: 200 },
+        { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+      ),
+
+    onEnterBack: () =>
+      gsap.fromTo(
+        card,
+        { opacity: 0, x: 200 },
+        { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+      )
+  });
+});
 
 
 
