@@ -57,6 +57,20 @@ localStorage.setItem("products", JSON.stringify([
   "pic/pic105.png",
   "pic/pic106.png",
   "pic/pic107.png"
+],
+sec7_cards: [
+  {
+    img1: "pic/pic172.png",
+    img2: "pic/pic190.png",
+    title: "Nissan GT-R Racing",
+    para: "Features precision-engineered elements that enhance both performance and aerodynamics."
+  },
+  {
+    img1: "pic/pic173.png",
+    img2: "pic/pic191.png",
+    title: "Deus Vayanne",
+    para: "A futuristic hypercar concept designed for extreme performance and innovation."
+  }
 ]
 
 
@@ -125,6 +139,20 @@ specs_sec4: {
   "pic/pic113.png",
   "pic/pic114.png",
   "pic/pic115.png"
+],
+sec7_cards: [
+  {
+    img1: "pic/pic174.png",
+    img2: "pic/pic192.png",
+    title: "Lamborghini Huracan",
+    para: "The Lamborghini Huracán is a powerful V10 supercar known for its speed and bold design."
+  },
+  {
+    img1: "pic/pic175.png",
+    img2: "pic/pic193.png",
+    title: "Nissan GT-R Nismo",
+    para: "The Nissan GT-R Nismo is a high-performance sports car built for speed and precision, featuring a powerful twin-turbo engine and race-inspired design."
+  }
 ]
 
 
@@ -191,6 +219,20 @@ specs_sec4: {
   "pic/pic121.png",
   "pic/pic122.png",
   "pic/pic123.png"
+],
+sec7_cards: [
+  {
+    img1: "pic/pic176.png",
+    img2: "pic/pic194.png",
+    title: "Mclaren 600lt",
+    para: "The McLaren 600LT is a lightweight, track-focused supercar known for its sharp handling and powerful performance."
+  },
+  {
+    img1: "pic/pic177.png",
+    img2: "pic/pic195.png",
+    title: "Maserati stradale",
+    para: "The Maserati MC20 Stradale is a sleek supercar combining Italian elegance with powerful performance and advanced engineering."
+  }
 ]
 
   },
@@ -254,6 +296,20 @@ specs_sec4: {
   "pic/pic129.png",
   "pic/pic130.png",
   "pic/pic131.png"
+],
+sec7_cards: [
+  {
+    img1: "pic/pic178.png",
+    img2: "pic/pic196.png",
+    title: "lotus Evija",
+    para: "The Lotus Evija is an all-electric hypercar delivering extreme power, cutting-edge technology, and futuristic design."
+  },
+  {
+    img1: "pic/pic179.png",
+    img2: "pic/pic197.png",
+    title: "Ford Mustang",
+    para: "The Ford Mustang is an iconic sports car known for its powerful engine, bold design, and thrilling performance."
+  }
 ]
 
 
@@ -320,8 +376,22 @@ specs_sec4: {
   "pic/pic137.png",
   "pic/pic138.png",
   "pic/pic139.png"
-]
+],
 
+sec7_cards: [
+  {
+    img1: "pic/pic180.png",
+    img2: "pic/pic198.png",
+    title: "Mercedes Benz",
+    para: "Mercedes-Benz is a luxury car brand renowned for elegance, advanced technology, and high-performance vehicles.."
+  },
+  {
+    img1: "pic/pic181.png",
+    img2: "pic/pic200.png",
+    title: "Mclaren GT",
+    para: "The McLaren GT is a luxury grand tourer that blends high performance with comfort and striking design."
+  }
+]
 
 
 
@@ -388,8 +458,21 @@ specs_sec4: {
   "pic/pic145.png",
   "pic/pic146.png",
   "pic/pic147.png"
+],
+sec7_cards: [
+  {
+    img1: "pic/pic182.png",
+    img2: "pic/pic201.png",
+    title: "Porsche Turbo",
+    para: "The Porsche 911 Turbo is a high-performance sports car known for its speed, precision handling, and iconic design."
+  },
+  {
+    img1: "pic/pic183.png",
+    img2: "pic/pic202.png",
+    title: "Mansory Huracan",
+    para: "The Mansory Huracán is a customized Lamborghini featuring aggressive styling, enhanced performance, and exclusive luxury upgrades."
+  }
 ]
-
 
 
 
@@ -454,6 +537,20 @@ specs_sec4: {
   "pic/pic153.png",
   "pic/pic154.png",
   "pic/pic155.png"
+],
+sec7_cards: [
+  {
+    img1: "pic/pic184.png",
+    img2: "pic/pic203.png",
+    title: "Nissan Z GT4",
+    para: "The Nissan Z GT4 is a race-ready sports car combining classic Z styling with high-performance track capabilities. "
+  },
+  {
+    img1: "pic/pic185.png",
+    img2: "pic/pic204.png",
+    title: " Aspark 0wl",
+    para: "The Aspark Owl is an all-electric hypercar known for its extreme speed, futuristic design, and...."
+  }
 ]
 
 
@@ -520,7 +617,22 @@ specs_sec4: {
   "pic/pic161.png",
   "pic/pic162.png",
   "pic/pic163.png"
+],
+sec7_cards: [
+  {
+    img1: "pic/pic186.png",
+    img2: "pic/pic205.png",
+    title: "porsche turbo",
+    para: "The Porsche 911 Turbo is a high-performance sports car known for its speed, precision handling, and iconic design."
+  },
+  {
+    img1: "pic/pic187.png",
+    img2: "pic/pic206.png",
+    title: "Lamborghini Huracan",
+    para: "The Lamborghini Huracán is a V10 supercar known for its speed, sharp handling, and striking Italian design."
+  }
 ]
+
 
 
 
@@ -585,6 +697,20 @@ specs_sec4: {
   "pic/pic169.png",
   "pic/pic170.png",
   "pic/pic171.png"
+],
+sec7_cards: [
+  {
+    img1: "pic/pic188.png",
+    img2: "pic/pic207.png",
+    title: "Ford Mustang",
+    para: "The Ford Mustang is a classic sports car known for its powerful engine, bold design, and thrilling performance."
+  },
+  {
+    img1: "pic/pic189.png",
+    img2: "pic/pic208.png",
+    title: "Deus Vayanne",
+    para: "The Deus Vayanne is an electric hypercar delivering extreme speed, futuristic design, and cutting-edge technology."
+  }
 ]
 
 

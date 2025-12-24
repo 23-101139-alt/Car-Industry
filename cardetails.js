@@ -211,6 +211,22 @@ if (product.similarModels) {
 
 
 
+// sec7 cards
+if (product.sec7_cards) {
+  product.sec7_cards.forEach((card, index) => {
+    const i = index + 1;
+
+    const img1 = document.getElementById(`sec7-img${i}-1`);
+    const img2 = document.getElementById(`sec7-img${i}-2`);
+    const title = document.getElementById(`sec7-title${i}`);
+    const para = document.getElementById(`sec7-para${i}`);
+
+    if (img1) img1.src = card.img1;
+    if (img2) img2.src = card.img2;
+    if (title) title.innerHTML = card.title;
+    if (para) para.innerHTML = card.para;
+  });
+}
 
 
 
