@@ -121,6 +121,13 @@ document.getElementById("cta1-sec5").innerHTML = "View product ";
 document.getElementById("cta2-sec5").innerHTML = "View product ";
 document.getElementById("cta3-sec5").innerHTML = "View product ";
 
+
+
+document.getElementById("header-sec6").innerHTML = "Gallery";
+
+
+
+
 const row = document.querySelector('.row2-sec5-p2');
 const card3 = document.querySelector('.cardd3-sec5-p2');
 
@@ -196,6 +203,7 @@ if (product.similarModels) {
     if (models[index]) models[index].innerHTML = item.model;
   });
 }
+
 
 
 
@@ -499,6 +507,88 @@ gsap.utils.toArray(".cardd3-sec5-p2").forEach(card => {
         { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }
       )
   });
+
+
+
+
+// animation sec6
+
+gsap.registerPlugin(ScrollTrigger);
+
+const container = document.querySelector(".container-imgs-sec6-p2");
+
+if (!container.classList.contains("duplicated")) {
+  container.innerHTML += container.innerHTML;
+  container.classList.add("duplicated");
+}
+
+const marquee = gsap.to(container, {
+  xPercent: -50,
+  duration: 13,      
+  ease: "linear",
+  repeat: -1,
+  paused: true
+});
+
+ScrollTrigger.create({
+  trigger: ".sec6-p2",
+  start: "top bottom",
+  end: "bottom top",
+  onEnter: () => marquee.play(),
+  onLeave: () => marquee.pause(),
+  onEnterBack: () => marquee.play(),
+  onLeaveBack: () => marquee.pause()
+});
+
+
+
+// sec6 images
+if (product.sec6_images) {
+  product.sec6_images.forEach((imgSrc, index) => {
+    const img = document.getElementById(`sec6-img${index + 1}`);
+    if (img) img.src = imgSrc;
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
 
 

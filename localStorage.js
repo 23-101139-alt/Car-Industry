@@ -48,6 +48,16 @@ localStorage.setItem("products", JSON.stringify([
     { img: "pic/pic73.png", subtitle: "BYD_Sealio", model: "Sealion_7" },
     { img: "pic/pic74.png", subtitle: "BYD_Seal_GT", model: "Seal 06 GT" }
   ],
+  sec6_images: [
+  "pic/pic100.png",
+  "pic/pic101.png",
+  "pic/pic102.png",
+  "pic/pic103.png",
+  "pic/pic104.png",
+  "pic/pic105.png",
+  "pic/pic106.png",
+  "pic/pic107.png"
+]
 
 
 
@@ -106,6 +116,16 @@ specs_sec4: {
     { img: "pic/pic76.png", subtitle: "lotus_evija", model: "2019_lotus_evija" },
     { img: "pic/pic77.png", subtitle: "Deus_Vayanne", model: "2022_Deus_Concept" }
   ],
+  sec6_images: [
+  "pic/pic108.png",
+  "pic/pic109.png",
+  "pic/pic110.png",
+  "pic/pic111.png",
+  "pic/pic112.png",
+  "pic/pic113.png",
+  "pic/pic114.png",
+  "pic/pic115.png"
+]
 
 
 
@@ -162,6 +182,16 @@ specs_sec4: {
     { img: "pic/pic79.png", subtitle: "nissan_z", model: "2023_nissan_z_gt4" },
     { img: "pic/pic80.png", subtitle: "Nissan_gt-r", model: "Nissan_gt_r_Nismo" }
   ],
+  sec6_images: [
+  "pic/pic116.png",
+  "pic/pic117.png",
+  "pic/pic118.png",
+  "pic/pic119.png",
+  "pic/pic120.png",
+  "pic/pic121.png",
+  "pic/pic122.png",
+  "pic/pic123.png"
+]
 
   },
 
@@ -215,6 +245,17 @@ specs_sec4: {
     { img: "pic/pic82.png", subtitle: "Lamborghini", model: "Huracan_LP580-2" },
     { img: "pic/pic83.png", subtitle: "Mansory", model: "Huracan_Torofeo" }
   ],
+  sec6_images: [
+  "pic/pic124.png",
+  "pic/pic125.png",
+  "pic/pic126.png",
+  "pic/pic127.png",
+  "pic/pic128.png",
+  "pic/pic129.png",
+  "pic/pic130.png",
+  "pic/pic131.png"
+]
+
 
 
   },
@@ -270,6 +311,17 @@ specs_sec4: {
     { img: "pic/pic85.png", subtitle: "Mercedes", model: "Benz_amg_c63s" },
     { img: "pic/pic86.png", subtitle: "Nissan_Nismo", model: "Nissan_370Z_Nismo" }
   ],
+  sec6_images: [
+  "pic/pic132.png",
+  "pic/pic133.png",
+  "pic/pic134.png",
+  "pic/pic135.png",
+  "pic/pic136.png",
+  "pic/pic137.png",
+  "pic/pic138.png",
+  "pic/pic139.png"
+]
+
 
 
 
@@ -326,7 +378,18 @@ specs_sec4: {
     { img: "pic/pic87.png", subtitle: "Ford_mustang", model: "Ford_Mustang_RTR" },
     { img: "pic/pic88.png", subtitle: "Ford_mustang", model: "Rtr_spec_5" },
     { img: "pic/pic89.png", subtitle: "mclaren_artura", model: "Mclaren_artura_gt4" }
-  ],
+  ],  
+  sec6_images: [
+  "pic/pic140.png",
+  "pic/pic141.png",
+  "pic/pic142.png",
+  "pic/pic143.png",
+  "pic/pic144.png",
+  "pic/pic145.png",
+  "pic/pic146.png",
+  "pic/pic147.png"
+]
+
 
 
 
@@ -382,7 +445,16 @@ specs_sec4: {
     { img: "pic/pic91.png", subtitle: "porsche_turbo", model: "Rtr_spec_5" },
     { img: "pic/pic92.png", subtitle: "porsche_turbo", model: "Taycan_Turbo_S" }
   ],
-
+  sec6_images: [
+  "pic/pic148.png",
+  "pic/pic149.png",
+  "pic/pic150.png",
+  "pic/pic151.png",
+  "pic/pic152.png",
+  "pic/pic153.png",
+  "pic/pic154.png",
+  "pic/pic155.png"
+]
 
 
 
@@ -439,7 +511,16 @@ specs_sec4: {
     { img: "pic/pic94.png", subtitle: "Mclaren", model: "Mclaren_600lt" },
     { img: "pic/pic95.png", subtitle: "Mclaren", model: "Mclaren_765lt" }
   ],
-
+  sec6_images: [
+  "pic/pic156.png",
+  "pic/pic157.png",
+  "pic/pic158.png",
+  "pic/pic159.png",
+  "pic/pic160.png",
+  "pic/pic161.png",
+  "pic/pic162.png",
+  "pic/pic163.png"
+]
 
 
 
@@ -495,7 +576,16 @@ specs_sec4: {
     { img: "pic/pic97.png", subtitle: "Audi_quattro", model: "R8_4.2_fsi" },
     { img: "pic/pic98.png", subtitle: "Mclaren", model: "Mclaren_Gt" }
   ],
-
+  sec6_images: [
+  "pic/pic164.png",
+  "pic/pic165.png",
+  "pic/pic166.png",
+  "pic/pic167.png",
+  "pic/pic168.png",
+  "pic/pic169.png",
+  "pic/pic170.png",
+  "pic/pic171.png"
+]
 
 
 
