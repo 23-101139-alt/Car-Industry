@@ -125,6 +125,11 @@ document.getElementById("cta3-sec5").innerHTML = "View product ";
 
 document.getElementById("header-sec6").innerHTML = "Gallery";
 
+document.getElementById("header-sec7").innerHTML = "People Also Viewed";
+document.getElementById("link-sec7").innerHTML = "View All";
+document.getElementById("link2-sec7").innerHTML = "View product";
+document.getElementById("link3-sec7").innerHTML = "View product";
+
 
 
 
@@ -304,6 +309,31 @@ if (product.similarModels) {
     const nums = color.match(/\d+/g).map(Number);
     return [nums[0]/255, nums[1]/255, nums[2]/255, 1];
   }
+
+
+// wrapsec7
+const cardsContainer = document.querySelector('.conatiner-cards-sec7-p2');
+const cards = document.querySelectorAll('.card-sec7-p2');
+
+function adjustImageWidth() {
+  const containerWidth = cardsContainer.clientWidth;
+
+  cards.forEach(card => {
+    const img = card.querySelector('.img-sec7-p2');
+
+    if (img) {
+      if (containerWidth < 1050) { 
+        img.style.width = '38%'; 
+      } else {
+        img.style.width = '48%'; 
+      }
+    }
+  });
+}
+
+window.addEventListener('load', adjustImageWidth);
+window.addEventListener('resize', adjustImageWidth);
+
 
 
 
