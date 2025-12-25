@@ -1844,7 +1844,7 @@ position: absolute;
 
 .model-one-p2 .custom-ar-btn {
   position: absolute;
-  top: 70%;    top: -14px;
+  top: 50%;    top: -14px;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 20;
