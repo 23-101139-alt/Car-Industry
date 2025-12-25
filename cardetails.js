@@ -130,8 +130,9 @@ document.getElementById("link-sec7").innerHTML = "View All";
 document.getElementById("link2-sec7").innerHTML = "View product";
 document.getElementById("link3-sec7").innerHTML = "View product";
 
-
-
+document.getElementById("header-sec8").innerHTML = "Exclusive Deals Just for You";
+document.getElementById("para-sec8").innerHTML = "Gain access to exclusive savings and curated offers designed just for this model. From limited-time promotions to early release updates, we’ll send you only the most valuable deals—no spam, just benefits.";
+document.getElementById("cta-sec8").innerHTML = "Submit";
 
 const row = document.querySelector('.row2-sec5-p2');
 const card3 = document.querySelector('.cardd3-sec5-p2');
@@ -649,6 +650,33 @@ gsap.utils.toArray(".card2-sec7-p2").forEach(card => {
 
 
 
+
+// animationsec8
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils
+  .toArray(".para-sec8-p2, .row-sec8-p2")
+  .forEach(el => {
+    ScrollTrigger.create({
+      trigger: el,
+      start: "top 85%",
+
+      onEnter: () =>
+        gsap.fromTo(
+          el,
+          { opacity: 0 },
+          { opacity: 1, duration: 1.9, ease: "power2.out" }
+        ),
+
+      onEnterBack: () =>
+        gsap.fromTo(
+          el,
+          { opacity: 0 },
+          { opacity: 1, duration: 1.9, ease: "power2.out" }
+        )
+    });
+  });
 
 
 
