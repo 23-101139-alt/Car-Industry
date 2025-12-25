@@ -404,14 +404,14 @@ gsap.utils.toArray(".first-box-sec6").forEach(card => {
     onEnter: () =>
       gsap.fromTo(
         card,
-        { opacity: 0, x: -200 },
+        { opacity: 0, x: -300 },
         { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
       ),
 
     onEnterBack: () =>
       gsap.fromTo(
         card,
-        { opacity: 0, x: -200 },
+        { opacity: 0, x: -300 },
         { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
       )
   });
@@ -428,14 +428,14 @@ gsap.utils.toArray(".sec-box-sec6").forEach(card => {
     onEnter: () =>
       gsap.fromTo(
         card,
-        { opacity: 0, x: 200 },
+        { opacity: 0, x: 300 },
         { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
       ),
 
     onEnterBack: () =>
       gsap.fromTo(
         card,
-        { opacity: 0, x: 200 },
+        { opacity: 0, x: 300 },
         { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
       )
   });
