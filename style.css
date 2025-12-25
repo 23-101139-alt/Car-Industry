@@ -1844,7 +1844,7 @@ position: absolute;
 
 .model-one-p2 .custom-ar-btn {
   position: absolute;
-  top: 50%;    top: -14px;
+  bottom: 30%;   
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 20;
@@ -2347,10 +2347,21 @@ height: fit-content;padding-top: 12px;
 
 flex-direction: column;
 justify-content: flex-end;gap: 27px;
-align-items: center;
+align-items: center;transition: all 300ms linear;
     background: var(--gradient-2);
     border-radius: 25px;    width: 32%;
     border: 2px solid var(--border-color);}
+
+
+.cardd-sec5-p2:hover{
+box-shadow: -2px 4px 30.4px 0 #C6DE41;
+}
+.cardd2-sec5-p2:hover{
+box-shadow: -2px 4px 30.4px 0 #C6DE41;
+}
+.cardd3-sec5-p2:hover{
+box-shadow: -2px 4px 30.4px 0 #C6DE41;
+}
 
 
 .contaniner-text-part-card-sec5-p2{display: flex;
@@ -2426,7 +2437,7 @@ height:fit-content;padding-top: 12px;
 flex-direction: column;
 justify-content: flex-end;gap: 27px;
 align-items: center;
-    background: var(--gradient-2);
+    background: var(--gradient-2);transition: all 300ms linear;
     border-radius: 25px; width: 32%;
     border: 2px solid var(--border-color);}
 
@@ -2437,7 +2448,7 @@ height: fit-content;padding-top: 12px;
 flex-direction: column;
 justify-content: flex-end;gap: 27px;
 align-items: center;
-    background: var(--gradient-2);
+    background: var(--gradient-2);transition: all 300ms linear;
     border-radius: 25px; width: 32%;
     border: 2px solid var(--border-color);}
 
@@ -2559,16 +2570,23 @@ height: 302px;
 background: var(--gradient3);
 border-radius: 25px;
     border: 2px solid var(--border-color);
-    display: flex;
+    display: flex;transition: all 300ms linear;
     align-items: center;}
+
+.card-sec7-p2:hover{
+box-shadow: -2px 4px 30.4px 0 #C6DE41;
+}
+
  .card2-sec7-p2{width: 50%;
 height: 302px;
 background: var(--gradient3);
 border-radius: 25px;
     border: 2px solid var(--border-color);
-    display: flex;
+    display: flex;transition: all 300ms linear;
     align-items: center;}
-
+.card2-sec7-p2:hover{
+box-shadow: -2px 4px 30.4px 0 #C6DE41;
+}
 
 .main-info-card-sec7-p2{width: 100%;
 height: fit-content;
@@ -3808,7 +3826,10 @@ gap: 65px;}
 
 .text-cont-sec8-p2 {
     width: 100%;}
+.navigation2-sec6 {
 
+    left: unset;
+    right: 12%;}
 
 
 }
