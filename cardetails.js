@@ -253,14 +253,14 @@ if (product.sec7_cards) {
 
   const modelButtonColors = {
     "byd-seal-u": ["#8A9604", "#033977", "#AA1717"],
-    "byd-u9": ["#CB9A00", "#0000FF", "#00FF00"],
+    "byd-u9": ["#CB9A00", "#eb2828ff", "#1a43faff"],
     "byd-seal-u2": ["#51F9E8", "#c57506ff", "#198adbff"],
-    "audi-r8": ["#04B63A", "#192ea4ff", "#b61515ff"],
+    "audi-r8": ["#00A52D", "#2e44c3ff", "#b51818ff"],
     "bmw-m850": ["#3CA7F7", "#d8ea17ff", "#ec0d0dff"],
-    "lotus-emira": ["#73726E", "#0defb6ff", "#0931d1ff"],
-    "yangwang-u7": ["#0aca0aff", "#6d8000ff", "#0a57caff"],
-    "mclaren-gt": ["#00568D", "#800004ff", "#00800fff"],
-    "nissan-gtr": ["#BDB52F", "#005ccdff", "#00ff51ff"]
+    "lotus-emira": ["#73726E", "#fa1e1eff", "#0931d1ff"],
+    "yangwang-u7": ["#0aca0aff", "#c9bd16ff", "#0a57caff"],
+    "mclaren-gt": ["#00568D", "#800004ff", "#ed7f2bff"],
+    "nissan-gtr": ["#BDB52F", "#005ccdff", "#c03a0aff"]
   };
 
 
@@ -434,52 +434,82 @@ gsap.utils.toArray(".container-model-sec3-p2").forEach(container => {
 // animationsec4
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.utils.toArray(".card1-sec4-p2").forEach(card => {
-  ScrollTrigger.create({
-    trigger: card,
-    start: "top 85%",
-    toggleActions: "restart none restart none",
+ScrollTrigger.matchMedia({
 
-    onEnter: () =>
-      gsap.fromTo(
-        card,
-        { opacity: 0, y: 400 }, 
-        { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" } 
-      ),
+  "(min-width: 901px)": function () {
 
-    onEnterBack: () =>
-      gsap.fromTo(
-        card,
-        { opacity: 0, y: 400 },  
-        { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }
-      )
-  });
+    gsap.utils.toArray(".card1-sec4-p2").forEach(card => {
+      ScrollTrigger.create({
+        trigger: card,
+        start: "top 85%",
+
+        onEnter: () =>
+          gsap.fromTo(
+            card,
+            { opacity: 0, x: -300 },
+            { opacity: 1, x: 0, duration: 0.6, ease: "power2.out" }
+          ),
+
+        onEnterBack: () =>
+          gsap.fromTo(
+            card,
+            { opacity: 0, x: -300 },
+            { opacity: 1, x: 0, duration: 0.6, ease: "power2.out" }
+          )
+      });
+    });
+
+
+    gsap.utils.toArray(".card-2-sec4-p2").forEach(card => {
+      ScrollTrigger.create({
+        trigger: card,
+        start: "top 85%",
+        
+
+        onEnter: () =>
+          gsap.fromTo(
+            card,
+            { opacity: 0, x: 300 },
+            { opacity: 1, x: 0, duration: 0.6, ease: "power2.out" }
+          ),
+
+        onEnterBack: () =>
+          gsap.fromTo(
+            card,
+            { opacity: 0, x: 300 },
+            { opacity: 1, x: 0, duration: 0.6, ease: "power2.out" }
+          )
+      });
+    });
+  },
+
+
+  "(max-width: 900px)": function () {
+
+    gsap.utils.toArray(".card1-sec4-p2, .card-2-sec4-p2").forEach(card => {
+      ScrollTrigger.create({
+        trigger: card,
+        start: "top 90%",
+
+        onEnter: () =>
+          gsap.fromTo(
+            card,
+            { opacity: 0, y: 400 },
+            { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }
+          ),
+
+        onEnterBack: () =>
+          gsap.fromTo(
+            card,
+            { opacity: 0, y: 400 },
+            { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }
+          )
+      });
+    });
+  }
+
 });
 
-
-
-
-gsap.utils.toArray(".card-2-sec4-p2").forEach(card => {
-  ScrollTrigger.create({
-    trigger: card,
-    start: "top 85%",
-    toggleActions: "restart none restart none",
-
-    onEnter: () =>
-      gsap.fromTo(
-        card,
-        { opacity: 0, y: 400 }, 
-        { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" } 
-      ),
-
-    onEnterBack: () =>
-      gsap.fromTo(
-        card,
-        { opacity: 0, y: 400 },  
-        { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }
-      )
-  });
-});
 
 
 
@@ -558,20 +588,38 @@ gsap.utils.toArray(".cardd3-sec5-p2").forEach(card => {
 
 
 
-// animation sec6
 
-gsap.registerPlugin(ScrollTrigger);
+// sec6
 
-const container = document.querySelector(".container-imgs-sec6-p2");
+const marqueeTrack = document.querySelector(".container-imgs-sec6-p2");
 
-if (!container.classList.contains("duplicated")) {
-  container.innerHTML += container.innerHTML;
-  container.classList.add("duplicated");
+
+marqueeTrack.innerHTML = `
+  <img id="sec6-img1" class="imgs-sec6-p2">
+  <img id="sec6-img2" class="imgs-sec6-p2">
+  <img id="sec6-img3" class="imgs-sec6-p2">
+  <img id="sec6-img4" class="imgs-sec6-p2">
+  <img id="sec6-img5" class="imgs-sec6-p2">
+  <img id="sec6-img6" class="imgs-sec6-p2">
+  <img id="sec6-img7" class="imgs-sec6-p2">
+  <img id="sec6-img8" class="imgs-sec6-p2">
+`;
+
+
+if (product.sec6_images) {
+  product.sec6_images.forEach((src, i) => {
+    const img = marqueeTrack.children[i];
+    if (img) img.src = src;
+  });
 }
 
-const marquee = gsap.to(container, {
+
+marqueeTrack.innerHTML += marqueeTrack.innerHTML;
+gsap.registerPlugin(ScrollTrigger);
+
+const marqueeAnim = gsap.to(marqueeTrack, {
   xPercent: -50,
-  duration: 13,      
+  duration: 13,     
   ease: "linear",
   repeat: -1,
   paused: true
@@ -581,71 +629,94 @@ ScrollTrigger.create({
   trigger: ".sec6-p2",
   start: "top bottom",
   end: "bottom top",
-  onEnter: () => marquee.play(),
-  onLeave: () => marquee.pause(),
-  onEnterBack: () => marquee.play(),
-  onLeaveBack: () => marquee.pause()
+  onEnter: () => marqueeAnim.play(),
+  onLeave: () => marqueeAnim.pause(),
+  onEnterBack: () => marqueeAnim.play(),
+  onLeaveBack: () => marqueeAnim.pause()
 });
 
 
 
-// sec6 images
-if (product.sec6_images) {
-  product.sec6_images.forEach((imgSrc, index) => {
-    const img = document.getElementById(`sec6-img${index + 1}`);
-    if (img) img.src = imgSrc;
-  });
-}
 
 
 
 // animationsec7
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.utils.toArray(".card-sec7-p2").forEach(card => {
-  ScrollTrigger.create({
-    trigger: card,
-    start: "top 85%",
-    toggleActions: "restart none restart none",
+ScrollTrigger.matchMedia({
 
-    onEnter: () =>
-      gsap.fromTo(
-        card,
-        { opacity: 0, x: -200 },
-        { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
-      ),
+  "(min-width: 901px)": function () {
 
-    onEnterBack: () =>
-      gsap.fromTo(
-        card,
-        { opacity: 0, x: -200 },
-        { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
-      )
-  });
-});
+    gsap.utils.toArray(".card-sec7-p2").forEach(card => {
+      ScrollTrigger.create({
+        trigger: card,
+        start: "top 85%",
+
+        onEnter: () =>
+          gsap.fromTo(
+            card,
+            { opacity: 0, x: -200 },
+            { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+          ),
+
+        onEnterBack: () =>
+          gsap.fromTo(
+            card,
+            { opacity: 0, x: -200 },
+            { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+          )
+      });
+    });
 
 
+    gsap.utils.toArray(".card2-sec7-p2").forEach(card => {
+      ScrollTrigger.create({
+        trigger: card,
+        start: "top 85%",
+        
 
-gsap.utils.toArray(".card2-sec7-p2").forEach(card => {
-  ScrollTrigger.create({
-    trigger: card,
-    start: "top 85%",
-    toggleActions: "restart none restart none",
+        onEnter: () =>
+          gsap.fromTo(
+            card,
+            { opacity: 0, x: 200 },
+            { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+          ),
 
-    onEnter: () =>
-      gsap.fromTo(
-        card,
-        { opacity: 0, x: 200 },
-        { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
-      ),
+        onEnterBack: () =>
+          gsap.fromTo(
+            card,
+            { opacity: 0, x: 200 },
+            { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+          )
+      });
+    });
+  },
 
-    onEnterBack: () =>
-      gsap.fromTo(
-        card,
-        { opacity: 0, x: 200 },
-        { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
-      )
-  });
+
+  "(max-width: 900px)": function () {
+
+    gsap.utils.toArray(".card-sec7-p2, .card2-sec7-p2").forEach(card => {
+      ScrollTrigger.create({
+        trigger: card,
+        start: "top 90%",
+
+        onEnter: () =>
+          gsap.fromTo(
+            card,
+            { opacity: 0, y: 400 },
+            { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+          ),
+
+        onEnterBack: () =>
+          gsap.fromTo(
+            card,
+            { opacity: 0, y: 400 },
+            { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+          )
+      });
+    });
+  }
+
 });
 
 
@@ -723,60 +794,7 @@ document.getElementById("list-25").innerHTML =`Cookies`
 
 document.getElementById("list-26").innerHTML =`@2024,MGY,AllRightsReservedbytheMGY`
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

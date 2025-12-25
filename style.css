@@ -2062,7 +2062,7 @@ font-weight: 500;}
 
 .model-one-p2-sec3 .custom-ar-btn {
   position: absolute;
-  top: 70%;    top: -14px;
+  top: 50%;   
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 20;
@@ -4526,6 +4526,15 @@ font-size: clamp(36px, 7vw, 40px);}
     width: 100%;}
 
 
+.header-sec2 {
+    font-size: clamp(36px, 7vw, 40px);}
+
+.header-sec3 {  font-size: clamp(36px, 7vw, 40px);}
+.header-sec5 {font-size: clamp(36px, 7vw, 40px);}
+.header-sec6 {font-size: clamp(36px, 7vw, 40px);}
+.header-sec7 {font-size: clamp(36px, 7vw, 40px);}
+
+
 }
 
 
@@ -4569,7 +4578,7 @@ font-size: clamp(36px, 7vw, 40px);}
     font-size: clamp(85px, 9vw, 117px);
 }
     .model-one {
-        width: clamp(140%, 150vw, 200%);
+        width: clamp(140%, 150vw, 220%);
         
     }
 

@@ -406,7 +406,7 @@ sec7_cards: [
     price: "3,500,000 EGP",
     model: "models/2022_lotus_emira_v6.glb",
     poster: "models/poster15.png",
-    display: { height: "112%", top: "-2%" },
+    display: { height: "115%", top: "-9%" },
     numb1_sec2: "400",
     para1_sec2: "A lightweight sports car built for driving purity.",
     numb2_sec2: "290",

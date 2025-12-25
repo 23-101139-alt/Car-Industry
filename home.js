@@ -166,14 +166,14 @@ gsap.utils.toArray(".main-card-sec2").forEach(card => {
     onEnter: () =>
       gsap.fromTo(
         card,
-        { opacity: 0, y: 200 },
+        { opacity: 0, y: 300 },
         { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
       ),
 
     onEnterBack: () =>
       gsap.fromTo(
         card,
-        { opacity: 0, y: 200 },
+        { opacity: 0, y: 300 },
         { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
       )
   });
@@ -359,14 +359,14 @@ gsap.utils.toArray(".card-sec5-1, .card-sec5-2").forEach(card => {
     onEnter: () =>
       gsap.fromTo(
         card,
-        { opacity: 0, y: 200 },
+        { opacity: 0, y: 300 },
         { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
       ),
 
     onEnterBack: () =>
       gsap.fromTo(
         card,
-        { opacity: 0, y: 200 },
+        { opacity: 0, y: 300 },
         { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
       )
   });
@@ -470,14 +470,14 @@ gsap.utils
       onEnter: () =>
         gsap.fromTo(
           card,
-          { opacity: 0, y: 200 },
+          { opacity: 0, y: 300 },
           { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
         ),
 
       onEnterBack: () =>
         gsap.fromTo(
           card,
-          { opacity: 0, y: 200 },
+          { opacity: 0, y: 300 },
           { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
         )
     });
